@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | SmileWave Pediatric &amp; Multi-Speciality Dental Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-lowest": "#ffffff",
+                "inverse-on-surface": "#ebf1ff",
+                "surface-dim": "#cfdaf1",
+                "primary": "#0059a4",
+                "secondary-fixed-dim": "#47d7f8",
+                "tertiary": "#485c5f",
+                "surface-tint": "#005fae",
+                "inverse-surface": "#263142",
+                "primary-container": "#0072ce",
+                "background": "#f9f9ff",
+                "error": "#ba1a1a",
+                "surface-variant": "#d8e3fa",
+                "on-secondary-fixed": "#001f26",
+                "surface-container": "#e7eeff",
+                "outline-variant": "#c1c7d4",
+                "primary-fixed": "#d4e3ff",
+                "surface-container-low": "#f0f3ff",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#005f70",
+                "outline": "#717783",
+                "on-primary-fixed": "#001c3a",
+                "on-surface-variant": "#414752",
+                "tertiary-fixed": "#d0e7ea",
+                "error-container": "#ffdad6",
+                "on-surface": "#111c2c",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#d8e3fa",
+                "on-error-container": "#93000a",
+                "on-background": "#111c2c",
+                "on-tertiary-fixed-variant": "#364a4d",
+                "tertiary-container": "#607578",
+                "surface": "#f9f9ff",
+                "surface-container-high": "#dee8ff",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed": "#091f21",
+                "on-tertiary-container": "#e4fbfe",
+                "on-secondary-fixed-variant": "#004e5d",
+                "secondary-fixed": "#aeecff",
+                "secondary": "#00687b",
+                "surface-bright": "#f9f9ff",
+                "on-primary": "#ffffff",
+                "on-primary-fixed-variant": "#004785",
+                "tertiary-fixed-dim": "#b4cbce",
+                "inverse-primary": "#a5c8ff",
+                "primary-fixed-dim": "#a5c8ff",
+                "secondary-container": "#4fddfe",
+                "on-primary-container": "#f4f6ff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "stack-sm": "8px",
+                "margin-desktop": "40px",
+                "gutter": "24px",
+                "margin-mobile": "16px",
+                "unit": "8px",
+                "stack-lg": "48px",
+                "container-max": "1280px",
+                "stack-md": "24px"
+        },
+        "fontFamily": {
+                "headline-md": [
+                        "Manrope"
+                ],
+                "label-bold": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "label-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-md": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-bold": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "40px",
+                        {
+                                "lineHeight": "52px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f9f9ff; }
+        .ambient-card { transition: all 200ms ease-out; box-shadow: 0 10px 30px rgba(0, 18, 25, 0.05); }
+        .ambient-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 18, 25, 0.08); }
+        .btn-primary-gradient { background: linear-gradient(135deg, #0072ce, #0059a4); }
+        .btn-primary-gradient:hover { opacity: 0.9; }
+    </style>
+</head>
+<body class="bg-surface text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-on-background font-body-md text-body-md docked full-width top-0 shadow-sm dark:shadow-none fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto transition-all duration-200 ease-out">
+<div class="flex items-center gap-4">
+<img alt="SmileWave Logo" class="h-8 md:h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDteGCBDlSO0UEfGQq849fi94bOqeR9wbjHnaiOIZxVG14iVsuoZ3CoAl9xUnnplP-NzutznJHTpHQsj1YzZjGVNYzakWJE0lwzueUGcvq6e7oo8k2bQZDY1s9KH9eYx7xmSVb0qStDo_7JR9Bjlzs4Z1iYB6QSp3nR6P7m_P2L_sMVt6v0Sd2jV0Hr3uNy5KfVy3f0_wwsgy2BJWYq61w1_qDUyv89tQHY_3d2f-jLHVbUyniKHSfdoLqYhNMqk1aW5JQ"/>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary dark:text-primary-fixed dark:border-primary-fixed pb-1 transition-all duration-200 ease-out" href="#">About</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Pediatrics</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="hidden md:flex btn-primary-gradient text-on-primary px-6 py-3 rounded-xl font-label-bold text-label-bold hover:opacity-80 transition-opacity duration-200 items-center gap-2">
+            Book Appointment
+            <span class="material-symbols-outlined">calendar_today</span>
+</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main class="pt-[100px] md:pt-[120px] pb-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row gap-gutter items-center mb-stack-lg">
+<div class="w-full md:w-1/2 space-y-stack-md">
+<div class="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full font-label-bold text-label-bold font-bold">
+                    Our Mission
+                </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Gentle, Family-Focused Dental Care.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">At SmileWave, we believe a trip to the dentist should feel like visiting a trusted friend. Our Borivali West clinic combines cutting-edge technology with a warm, pediatric-friendly environment to ensure every smile, big or small, receives the precision care it deserves without the clinical anxiety.</p>
+<div class="flex gap-4 pt-4">
+<button class="btn-primary-gradient text-on-primary px-8 py-4 rounded-xl font-label-bold text-label-bold hover:opacity-80 transition-all duration-200">Meet Our Team</button>
+<button class="border border-inverse-primary text-primary px-8 py-4 rounded-xl font-label-bold text-label-bold hover:bg-surface-container-low transition-all duration-200">Tour the Clinic</button>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-ambient">
+<img class="object-cover w-full h-full" data-alt="A brightly lit, modern dental clinic waiting area with soft teal accents, plush comfortable seating, and a dedicated pediatric play corner filled with wooden toys. Large windows let in abundant natural light, creating a serene, airy, and welcoming atmosphere. Soft-modern aesthetic, professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7ndOtiiu6W8BInCKohCwUZIJvBQeFjjxD7M5ve_5SZ9KFj1KeaItXZuyAvWssVPCXF_8-IrSis1LGYLWlDH2q764iHV98b6dPEycB4fUzEtYBoQEtD79-EpFHOgmQS7jox3Iv68dLPaLQ3ZIoownlxu15g3OftJFvq5tpLvZMLTyfbmgTF7v0-djnsxAmxGqSKrG11LpmJJdTcsl4YBFrc-LGvrZSVO1b5yDG63D0CQF8Ppfe6wiAUw"/>
+</div>
+</div>
+</section>
+<!-- Values Section (Bento Grid) -->
+<section class="mb-stack-lg">
+<div class="text-center mb-stack-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Why Choose SmileWave?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-card flex flex-col items-start gap-4 col-span-1 md:col-span-2">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">child_care</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Pediatric Specialists</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our team is specially trained to handle pediatric dental anxiety. We use 'tell-show-do' techniques and maintain a fun, engaging environment to make children look forward to their visits.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-card flex flex-col items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">biotech</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Advanced Tech</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">From 3D imaging to painless injection systems, we employ the latest dental technology for precise, comfortable treatments.</p>
+</div>
+<div class="bg-primary p-8 rounded-xl ambient-card flex flex-col items-start gap-4 md:col-span-3 text-on-primary">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<h3 class="font-headline-md text-headline-md">The Anxiety-Free Promise</h3>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-3xl">We’ve designed our entire patient experience around minimizing stress. Enjoy noise-canceling headphones, ceiling-mounted entertainment during procedures, and a calming interior design that feels more like a wellness retreat than a clinical office.</p>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="mb-stack-lg">
+<div class="flex justify-between items-end mb-stack-md">
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Meet The Experts</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">Compassionate professionals dedicated to your smile.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Team Member 1 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-card overflow-hidden">
+<div class="aspect-square bg-surface-container relative">
+<img class="object-cover w-full h-full" data-alt="A professional headshot of a friendly, approachable female dentist in her late 30s wearing modern teal scrubs. She has a warm, reassuring smile. The background is a soft, blurred modern clinic setting with natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwt6CTGg1MMXLfRdOgOq3Y8fdrkz7ojrKngUbez2Fx5N0UXHZIiw1VHatzdZDXm4nLQ20ohAVseW5RgatSHibAku-_NT-f07YsZGen5rksaaBL38amxEWAD6nZ20w-BzK8Ve5iCzKuu21cVPylddl-DHmMK3iGc-XoDTEma9-RYEZoV6ygmG5yPSz_G1Bi5qOHoCgFDdB54ut8RDhvizySxp22eNJUGjtDtV-5aajuXnHv2lNw7y5nxg"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary">Dr. Ananya Sharma</h4>
+<p class="font-label-bold text-label-bold text-secondary mt-1">Lead Pediatric Dentist</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 line-clamp-3">With over 12 years of experience, Dr. Sharma specializes in making early dental experiences positive and fun for toddlers and teens alike.</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-card overflow-hidden">
+<div class="aspect-square bg-surface-container relative">
+<img class="object-cover w-full h-full" data-alt="A professional headshot of a kind, confident male orthodontist in his 40s wearing a crisp white coat over a light blue shirt. He is smiling warmly. The background is a bright, airy medical office with soft teal accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvYb4qQiaLk-93YiHhnrv07EiTiqnAcT5Vyr9YnMAdob0QQ3D5cKD4_yxVIqCUgXXQ9Hj2XNGk2L7r4psbFEbC0kC0sPzq9Dqb-bz50etzbY0uibWVZhek8P0A-Rf6uAZ3YF0DRBMf1Z9MREUeHWsB6eTqWmO-cJNxNYKC_BFK5LMACmxfg_P8AVH1Udh-K1LhrTeT-EaEGUiyrKfjDUMkteH0FrRaJJwHl0drUVI3IUy7VDL5uycTPQ"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary">Dr. Rahul Mehta</h4>
+<p class="font-label-bold text-label-bold text-secondary mt-1">Orthodontic Specialist</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 line-clamp-3">Dr. Mehta is passionate about aligning smiles discreetly using modern clear aligner technology and traditional braces tailored for comfort.</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-card overflow-hidden">
+<div class="aspect-square bg-surface-container relative">
+<img class="object-cover w-full h-full" data-alt="A professional headshot of a sophisticated female endodontist in her 30s with an empathetic smile, wearing tailored teal scrubs. The lighting is soft and flattering, highlighting a clean, modern clinic background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGGDZBPJ7GZSuwHJvuAgaz7oCTvJXH_ol6ovSEHjhyhlPKCogOiAf4OrN3-qT1jFBe2Bf5i5aMbQE8n4c6zhJ0aRgayj5n76-izkxtYF4kepfWHyjAbsLEQzL9SEIzV3V-a302_NyYwOz8YqAYeNi7X6-AhzgUjcD2He0jhYN1L-xmGwjgSLFoeGyakyMCUOx4n8B0n7oIj-vWZLZCj_5RuWM_v_Q77E8kwWfr9IGqz7qbVsGjw4aVug"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary">Dr. Priya Patel</h4>
+<p class="font-label-bold text-label-bold text-secondary mt-1">Endodontist</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 line-clamp-3">Dedicated to pain-free root canal therapies, Dr. Patel uses advanced microscopic techniques to save natural teeth with minimal discomfort.</p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-card overflow-hidden flex flex-col items-center justify-center text-center p-6 bg-surface-container-low border border-dashed border-outline-variant">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Our Support Staff</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">From friendly receptionists to expert hygienists, our entire team is here to support you.</p>
+</div>
+</div>
+</section>
+<!-- Clinic Overview -->
+<section class="bg-surface-container-highest rounded-xl p-8 md:p-12 flex flex-col md:flex-row gap-gutter items-center">
+<div class="w-full md:w-1/2 space-y-4">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Located in the Heart of Borivali West</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Our facility was custom-built to feel less like a clinic and more like a comfortable lounge. We prioritize hygiene, maintaining strict sterilization protocols exceeding international standards.</p>
+<ul class="space-y-3 mt-6">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span> Ample secure parking available
+                    </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span> Wheelchair &amp; stroller accessible
+                    </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span> Weekend &amp; evening appointments
+                    </li>
+</ul>
+</div>
+<div class="w-full md:w-1/2">
+<div class="w-full h-64 md:h-80 rounded-xl overflow-hidden shadow-sm relative group cursor-pointer" data-location="Borivali West, Mumbai">
+<img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" data-alt="A stylized map view highlighting Borivali West, Mumbai, with a soft teal marker indicating the location of the SmileWave Dental Clinic. Clean, modern map interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt-sCD5sndmmrRqItyQMKL5g7YIdSr5pC13R6YmwBow0M5ZcsdgEHA7xZZGN-Mtxp7nf9ldJ29RaCwO0pdUz7lv7XXLiZfa_Nr8FGvF_iht06iiHKpckJ1wuaf_TmUVvmRVM-OLhF8LZTpp3qpjvDduilYCP8DqDlqpwZakR6qAFJ83odtBgGaKYNIPJuiHCTcDR5pW43VlC9ijIYZ7LvWkR7iwkhlVfImMlI_knf2-YDH_SBKeV7UZw"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300"></div>
+<div class="absolute bottom-4 right-4 bg-surface px-4 py-2 rounded-lg shadow-ambient text-primary font-label-bold text-label-bold flex items-center gap-2">
+<span class="material-symbols-outlined">map</span> Get Directions
+                    </div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-on-background w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base flat no shadows transition-all duration-200 ease-out">
+<div class="flex items-center gap-2">
+<img alt="SmileWave Logo" class="h-8 md:h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2QMZ1SR_6OROWHEq3oh8Rubl4yN69SEkBkp9zu3k7tNcQBD6sfztRiw8-8UxrmqALSdI5tGuJ2sDHJvZDY04q7EfdczAjGaJDAn--0ho0hgCLCJaIBA_jWon8xd5JbRs1WUHse2DYuI8E1zb_fgKvOpXAQNbRE-KjAPUwKBms8y7rMnLBTiNEWFsGIZD_A6RwdPLSmsWqzvxQIWpbTDLfmwT5-6K0Ug9_JWA7ioF1yPUME8gFtJxxIXykCdrUBAX8tZE"/>
+</div>
+<div class="flex flex-wrap justify-center gap-6 font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Terms of Service</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Patient Portal</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Careers</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant text-center md:text-right mt-4 md:mt-0">
+            © 2024 SmileWave™ Pediatric &amp; Multi-Speciality Dental Clinic. All rights reserved.
+        </div>
+</footer>
+</body></html>

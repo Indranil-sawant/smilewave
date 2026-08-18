@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - SmileWave Pediatric Dental Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-lowest": "#ffffff",
+                "inverse-on-surface": "#ebf1ff",
+                "surface-dim": "#cfdaf1",
+                "primary": "#0059a4",
+                "secondary-fixed-dim": "#47d7f8",
+                "tertiary": "#485c5f",
+                "surface-tint": "#005fae",
+                "inverse-surface": "#263142",
+                "primary-container": "#0072ce",
+                "background": "#f9f9ff",
+                "error": "#ba1a1a",
+                "surface-variant": "#d8e3fa",
+                "on-secondary-fixed": "#001f26",
+                "surface-container": "#e7eeff",
+                "outline-variant": "#c1c7d4",
+                "primary-fixed": "#d4e3ff",
+                "surface-container-low": "#f0f3ff",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#005f70",
+                "outline": "#717783",
+                "on-primary-fixed": "#001c3a",
+                "on-surface-variant": "#414752",
+                "tertiary-fixed": "#d0e7ea",
+                "error-container": "#ffdad6",
+                "on-surface": "#111c2c",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#d8e3fa",
+                "on-error-container": "#93000a",
+                "on-background": "#111c2c",
+                "on-tertiary-fixed-variant": "#364a4d",
+                "tertiary-container": "#607578",
+                "surface": "#f9f9ff",
+                "surface-container-high": "#dee8ff",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed": "#091f21",
+                "on-tertiary-container": "#e4fbfe",
+                "on-secondary-fixed-variant": "#004e5d",
+                "secondary-fixed": "#aeecff",
+                "secondary": "#00687b",
+                "surface-bright": "#f9f9ff",
+                "on-primary": "#ffffff",
+                "on-primary-fixed-variant": "#004785",
+                "tertiary-fixed-dim": "#b4cbce",
+                "inverse-primary": "#a5c8ff",
+                "primary-fixed-dim": "#a5c8ff",
+                "secondary-container": "#4fddfe",
+                "on-primary-container": "#f4f6ff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "stack-sm": "8px",
+                "margin-desktop": "40px",
+                "gutter": "24px",
+                "margin-mobile": "16px",
+                "unit": "8px",
+                "stack-lg": "48px",
+                "container-max": "1280px",
+                "stack-md": "24px"
+        },
+        "fontFamily": {
+                "headline-md": [
+                        "Manrope"
+                ],
+                "label-bold": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "label-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-md": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-bold": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "40px",
+                        {
+                                "lineHeight": "52px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ]
+        },
+        boxShadow: {
+            'soft': '0 10px 30px rgba(0, 89, 164, 0.05)',
+            'soft-hover': '0 15px 40px rgba(0, 89, 164, 0.08)'
+        }
+    },
+  }
+</script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f9f9ff; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .card-hover-effect {
+            transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(0, 89, 164, 0.08);
+        }
+
+        .input-glow:focus-within {
+            box-shadow: 0 0 0 4px rgba(0, 114, 206, 0.2);
+            border-color: #0072ce;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #0072ce 0%, #0059a4 100%);
+        }
+    </style>
+</head>
+<body class="text-on-background min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<header class="bg-surface shadow-sm docked full-width top-0 transition-all duration-200 ease-out fixed left-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<a class="flex items-center gap-2" href="#">
+<img alt="SmileWave Logo" class="h-10 md:h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASOGgXaFAyJksAobHT7YLj2OnYUld5wWK3cJNeOWTWMccQISzfGg6yuSHpEL_eFGdg_NbbafzXXZkEi7ah5BCqzMiGmDiA8tJo-sbO0nydXJNQLU0WMq4v-rwHcJ-_Jl31t0KZUFglf_lOhX5GouZ5I5SjsPPr4bWnaGHfQV_05GUdemvY2_gj2O06MYJQ0E08a5Jqir-0WvP4ZqVnd6lO7cPk36o7NjCR8pGY3ek_CL1qJqRfUU83c-ls5zjYMbbXgHQ"/>
+</a>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md hover:opacity-80" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md hover:opacity-80" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md hover:opacity-80" href="#">Pediatrics</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md hover:opacity-80" href="#">Contact</a>
+</nav>
+<button class="hidden md:block gradient-primary text-on-primary px-6 py-3 rounded-xl font-label-bold text-label-bold hover:opacity-90 transition-opacity duration-200 shadow-soft">
+            Book Appointment
+        </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg text-center">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-4 md:font-headline-lg font-headline-lg-mobile text-headline-lg-mobile">Get in Touch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">We're here to help your little ones smile brighter. Reach out to us for appointments, inquiries, or dental emergencies.</p>
+</section>
+<!-- Main Content Area: Two Columns -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-stack-lg">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<!-- Left Column: Contact Info & Map -->
+<div class="flex flex-col gap-stack-md">
+<!-- Contact Information Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Address Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-soft card-hover-effect">
+<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined fill">location_on</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Visit Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">SmileWave Dental Clinic<br/>123 Borivali West, Ground Floor<br/>Near Shimpoli Cross Rd<br/>Mumbai, Maharashtra 400092</p>
+</div>
+<!-- Contact Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-soft card-hover-effect">
+<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined fill">call</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Contact</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2"><strong>Phone:</strong> +91 98765 43210</p>
+<p class="font-body-md text-body-md text-on-surface-variant"><strong>Email:</strong> hello@smilewave.com</p>
+</div>
+<!-- Hours Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-soft card-hover-effect md:col-span-2">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined fill">schedule</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Clinic Hours</h3>
+<div class="grid grid-cols-2 gap-x-8 gap-y-2 font-body-md text-body-md text-on-surface-variant">
+<span>Mon - Fri:</span> <span>9:00 AM - 8:00 PM</span>
+<span>Saturday:</span> <span>9:00 AM - 6:00 PM</span>
+<span>Sunday:</span> <span class="text-tertiary">Closed (Emergencies Only)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Area -->
+<div class="w-full h-80 rounded-2xl overflow-hidden shadow-soft relative bg-surface-container-lowest">
+<!-- Placeholder for Map -->
+<div class="w-full h-full bg-cover bg-center" data-alt="A clean, modern top-down illustrated map style interface showing Borivali West Mumbai, with a prominent friendly primary blue pin marker indicating the dental clinic location. Soft blue and white color palette, minimal street details." data-location="Borivali West, Mumbai" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2fsU6nh6qqsRDoxOiDZG9apJdDHIbzkc2zCMdzvJVZFAv2kpkekOrzAvt-TjJTjQy_qCYh6-2_xGpA4X2_HOfXvfGL3hARWK2bJ20KBgQ9_CIXC4AyW94J9D2cw6DT81fjGnRAXYpQ_l0fb7DXkMq5uC_xqeRCN-UgcXb4z0sS_gvplTR1T-2l7C6C9AwlJ1U1NGnwRb5wI40zOdSEeggOtowgdgkwwulEY11XIf5006d2vwsowF_sQ')"></div>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest px-4 py-2 rounded-lg shadow-sm font-label-bold text-label-bold text-primary flex items-center gap-2 cursor-pointer hover:bg-surface transition-colors">
+<span class="material-symbols-outlined">directions</span> Get Directions
+                        </div>
+</div>
+</div>
+<!-- Right Column: Appointment Form -->
+<div class="bg-surface-container-lowest p-8 rounded-[24px] shadow-soft border-l-4 border-tertiary-fixed-dim">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2 md:font-headline-lg font-headline-lg-mobile text-headline-lg-mobile">Book Your Appointment</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Fill out the form below and our team will get back to you to confirm your slot.</p>
+<form class="flex flex-col gap-4">
+<!-- Patient Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="patientName">Patient's Name *</label>
+<input class="w-full bg-surface rounded-lg border border-outline-variant px-4 py-3 font-body-md text-body-md text-on-background placeholder:text-outline-variant outline-none transition-all duration-200 input-glow focus:border-primary" id="patientName" placeholder="Enter full name" type="text"/>
+</div>
+<!-- Parent/Guardian Name & Phone (Row) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="parentName">Parent/Guardian Name</label>
+<input class="w-full bg-surface rounded-lg border border-outline-variant px-4 py-3 font-body-md text-body-md text-on-background placeholder:text-outline-variant outline-none transition-all duration-200 input-glow focus:border-primary" id="parentName" placeholder="Enter name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="phone">Phone Number *</label>
+<input class="w-full bg-surface rounded-lg border border-outline-variant px-4 py-3 font-body-md text-body-md text-on-background placeholder:text-outline-variant outline-none transition-all duration-200 input-glow focus:border-primary" id="phone" placeholder="+91" type="tel"/>
+</div>
+</div>
+<!-- Service Category (Chips) -->
+<div class="flex flex-col gap-2 mt-2">
+<label class="font-label-bold text-label-bold text-on-surface">Service Required</label>
+<div class="flex flex-wrap gap-2">
+<label class="cursor-pointer">
+<input checked="" class="peer hidden" name="service" type="radio"/>
+<span class="px-4 py-2 rounded-full border border-outline-variant font-label-bold text-label-bold text-secondary bg-surface peer-checked:bg-secondary peer-checked:text-on-secondary transition-colors duration-200 flex items-center justify-center">General Checkup</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="service" type="radio"/>
+<span class="px-4 py-2 rounded-full border border-outline-variant font-label-bold text-label-bold text-secondary bg-surface peer-checked:bg-secondary peer-checked:text-on-secondary transition-colors duration-200 flex items-center justify-center">Pediatrics</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="service" type="radio"/>
+<span class="px-4 py-2 rounded-full border border-outline-variant font-label-bold text-label-bold text-secondary bg-surface peer-checked:bg-secondary peer-checked:text-on-secondary transition-colors duration-200 flex items-center justify-center">Orthodontics</span>
+</label>
+<label class="cursor-pointer">
+<input class="peer hidden" name="service" type="radio"/>
+<span class="px-4 py-2 rounded-full border border-outline-variant font-label-bold text-label-bold text-secondary bg-surface peer-checked:bg-secondary peer-checked:text-on-secondary transition-colors duration-200 flex items-center justify-center">Other</span>
+</label>
+</div>
+</div>
+<!-- Date & Time (Row) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="date">Preferred Date *</label>
+<input class="w-full bg-surface rounded-lg border border-outline-variant px-4 py-3 font-body-md text-body-md text-on-background outline-none transition-all duration-200 input-glow focus:border-primary" id="date" type="date"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="time">Preferred Time</label>
+<select class="w-full bg-surface rounded-lg border border-outline-variant px-4 py-3 font-body-md text-body-md text-on-background outline-none transition-all duration-200 input-glow focus:border-primary appearance-none" id="time">
+<option disabled="" selected="" value="">Select Time Slot</option>
+<option value="morning">Morning (9 AM - 12 PM)</option>
+<option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+<option value="evening">Evening (4 PM - 8 PM)</option>
+</select>
+</div>
+</div>
+<!-- Message -->
+<div class="flex flex-col gap-2 mt-2">
+<label class="font-label-bold text-label-bold text-on-surface" for="message">Additional Notes</label>
+<textarea class="w-full bg-surface rounded-lg border border-outline-variant px-4 py-3 font-body-md text-body-md text-on-background placeholder:text-outline-variant outline-none transition-all duration-200 input-glow focus:border-primary resize-none" id="message" placeholder="Tell us about any specific concerns or symptoms..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="mt-4 gradient-primary text-on-primary w-full py-4 rounded-xl font-label-bold text-label-bold hover:opacity-90 transition-opacity duration-200 shadow-soft flex justify-center items-center gap-2" type="submit">
+                            Request Appointment <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full py-stack-lg px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base transition-all duration-200 ease-out md:px-margin-desktop px-margin-mobile">
+<div class="flex flex-col items-center md:items-start gap-2">
+<a class="flex items-center gap-2" href="#">
+<img alt="SmileWave Logo" class="h-8 md:h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA49PxpeySObtVnaSbLU7ta6c3tyTrM7Hs4ODXW2TGwDy_dultGGJvfiwVUpXD5D9l4oMetx58Mo2oiRSiYLHNASfmJ3H8Fwao77mzKMtTVxoaigLkEYg-E2Zj8nU7hACTu3Tn79EnyNtcLBUaDGwgEawz-HuEQl2fVSA904MXXXF5EZD_YK3c75Ch_3usIkd3njs3P6PaxBAiMq7ojfHC_WGjoSPi48hvdh8fM2BYjLhyGCmKePvjFuC8hk0F6VsBvPuQ"/>
+</a>
+<span class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">© 2024 SmileWave™ Pediatric &amp; Multi-Speciality Dental Clinic. All rights reserved.</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-4 mt-4 md:mt-0">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Patient Portal</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Careers</a>
+</nav>
+</footer>
+</body></html>

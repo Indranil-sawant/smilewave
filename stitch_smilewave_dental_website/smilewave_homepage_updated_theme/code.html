@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SmileWave™ - Pediatric &amp; Multi-Speciality Dental Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-lowest": "#ffffff",
+                "inverse-on-surface": "#ebf1ff",
+                "surface-dim": "#cfdaf1",
+                "primary": "#0059a4",
+                "secondary-fixed-dim": "#47d7f8",
+                "tertiary": "#485c5f",
+                "surface-tint": "#005fae",
+                "inverse-surface": "#263142",
+                "primary-container": "#0072ce",
+                "background": "#f9f9ff",
+                "error": "#ba1a1a",
+                "surface-variant": "#d8e3fa",
+                "on-secondary-fixed": "#001f26",
+                "surface-container": "#e7eeff",
+                "outline-variant": "#c1c7d4",
+                "primary-fixed": "#d4e3ff",
+                "surface-container-low": "#f0f3ff",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#005f70",
+                "outline": "#717783",
+                "on-primary-fixed": "#001c3a",
+                "on-surface-variant": "#414752",
+                "tertiary-fixed": "#d0e7ea",
+                "error-container": "#ffdad6",
+                "on-surface": "#111c2c",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#d8e3fa",
+                "on-error-container": "#93000a",
+                "on-background": "#111c2c",
+                "on-tertiary-fixed-variant": "#364a4d",
+                "tertiary-container": "#607578",
+                "surface": "#f9f9ff",
+                "surface-container-high": "#dee8ff",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed": "#091f21",
+                "on-tertiary-container": "#e4fbfe",
+                "on-secondary-fixed-variant": "#004e5d",
+                "secondary-fixed": "#aeecff",
+                "secondary": "#00687b",
+                "surface-bright": "#f9f9ff",
+                "on-primary": "#ffffff",
+                "on-primary-fixed-variant": "#004785",
+                "tertiary-fixed-dim": "#b4cbce",
+                "inverse-primary": "#a5c8ff",
+                "primary-fixed-dim": "#a5c8ff",
+                "secondary-container": "#4fddfe",
+                "on-primary-container": "#f4f6ff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "stack-sm": "8px",
+                "margin-desktop": "40px",
+                "gutter": "24px",
+                "margin-mobile": "16px",
+                "unit": "8px",
+                "stack-lg": "48px",
+                "container-max": "1280px",
+                "stack-md": "24px"
+        },
+        "fontFamily": {
+                "headline-md": [
+                        "Manrope"
+                ],
+                "label-bold": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "label-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "headline-md": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-bold": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "40px",
+                        {
+                                "lineHeight": "52px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .ambient-shadow {
+            box-shadow: 0 10px 30px rgba(0, 18, 25, 0.05);
+        }
+        .hover-lift {
+            transition: all 200ms ease-out;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(0, 18, 25, 0.08);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .gradient-primary {
+            background: linear-gradient(135deg, #0072ce 0%, #0059a4 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- 1. Top Announcement Bar -->
+<div class="bg-primary-container text-on-primary-container text-label-bold font-label-bold py-2 px-margin-mobile md:px-margin-desktop text-center">
+        Gentle, Family-Friendly Dental Care in Borivali West | <a class="underline hover:text-white transition-colors duration-200" href="#appointment">Book an Appointment →</a>
+</div>
+<!-- 2. Navbar (TopAppBar Component) -->
+<header class="bg-surface/90 backdrop-blur-md dark:bg-surface-dim/90 shadow-sm bg-surface dark:bg-surface-dim docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="flex items-center gap-4">
+<img alt="SmileWave Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzHIt96Zox6LdQrMEn20fmzryR3Gz62IrvzNw1EPbEjmKt6l3jUL5J31gnfCDAsL5GzQ_BXGPg_MmELEnBPRU7cwYsVRtClxPH4JfkYOLUGAoz7xPORUSSsWJ43fDDRuYJY3_-f73v9KtgRfTqrmZH6OMv99wV0gzAPXqxcYt67L9-ptz7UmI8PxEgPzff9iKY5cfNia5VMuxQaB228TE8qzxkRqeSeuPFl6PfHlxiOYkD91mJKs_5xpibp3J5Y0IUoUo"/>
+<span class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed">SmileWave™</span>
+</div>
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-bold text-label-bold font-label-bold" href="#">Home</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#services">Services</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#pediatrics">Pediatrics</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#journey">Journey</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#location">Location</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#faq">FAQ</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<a class="hidden md:flex text-primary font-label-bold text-label-bold items-center gap-2 hover:bg-primary-container/10 px-4 py-2 rounded-lg transition-all duration-200" href="tel:+919769311848">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                    Call
+                </a>
+<a class="bg-primary hover:bg-surface-tint text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-[16px] transition-all duration-200 hover-lift shadow-[0_10px_30px_rgba(0,18,25,0.05)]" href="#appointment">
+                    Book Appointment
+                </a>
+</div>
+</nav>
+</header>
+<main>
+<!-- 3. Hero -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-stack-lg md:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="flex flex-col gap-stack-md z-10">
+<span class="text-secondary font-label-bold text-label-bold bg-secondary/10 w-fit px-4 py-1.5 rounded-full uppercase tracking-wider">
+                        Pediatric &amp; Multi-Speciality Dental Care
+                    </span>
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-primary leading-tight">
+                        Healthy Smiles Start With Gentle Care.
+                    </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">
+                        Experience a new standard of dental care where advanced technology meets a warm, comforting environment. Tailored treatments for every member of your family.
+                    </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<a class="bg-primary hover:bg-surface-tint text-on-primary font-label-bold text-label-bold px-8 py-4 rounded-[16px] transition-all duration-200 hover-lift shadow-[0_10px_30px_rgba(0,18,25,0.05)]" href="#appointment">
+                            Book an Appointment
+                        </a>
+<a class="border border-secondary text-secondary hover:bg-secondary/5 font-label-bold text-label-bold px-8 py-4 rounded-[16px] transition-all duration-200" href="tel:+919769311848">
+                            Call +91 97693 11848
+                        </a>
+</div>
+<div class="flex items-center gap-6 mt-8 pt-8 border-t border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="child_care">child_care</span>
+<span class="text-label-bold font-label-bold text-on-surface-variant">Pediatric Care</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="family_restroom">family_restroom</span>
+<span class="text-label-bold font-label-bold text-on-surface-variant">Family Dentistry</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="dentistry">dentistry</span>
+<span class="text-label-bold font-label-bold text-on-surface-variant">Modern Dental Care</span>
+</div>
+</div>
+</div>
+<div class="relative w-full h-[500px] lg:h-[600px] rounded-[24px] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full" data-alt="A warm, brightly lit modern dental clinic setting. A friendly female dentist in clean teal scrubs is smiling warmly at a relaxed, happy young child sitting in the dental chair. The environment is soft, airy, and inviting, with soft natural light streaming in, emphasizing a 'Soft-Modern Professionalism' aesthetic with deep teal and soft sky blue accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpfyiNrVLwcWGSXW2fHrJppYsjg9EkQ-13csYLVai2d_5N1Sepx873antBHJpquJz4Auq8StHO3Q5NupdqqDcKWBiOLBpwGlx6vJWQ7rb4ld-xUVzTqzk25Q6FIoKHkfaTlkaSWvWGV4wH6jN-L6k2GyhmHzpVWPRseyXue7s_cuhtcZ_uk_9XH4fJcEbooqaGWXJaOqGw7VLHS7eVRT0_nFZDWU1HRZgB3DhhPIIAbOyxn3gX3n3thA')"></div>
+<div class="absolute bottom-8 left-8 glass-card rounded-[16px] p-4 flex items-center gap-4 ambient-shadow">
+<div class="bg-primary-container text-on-primary-container w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-primary font-bold">Comfort-first care</p>
+<p class="text-sm text-on-surface-variant">For stress-free visits</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface full-width rounded-t-xl border-t border-outline-variant dark:border-outline mt-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<img alt="SmileWave Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs7iEUTJWyClNn6u7WjTTNS4AvA6P7UAa7QdJ2SYKC0U8u7YchZrpVGC-MY7Hn2CLomxRw3Mkzv3A6moZkbt93G71XECA4ohQsgZfCZzKL-6VUcOaFLkR_djRmA0_6g7WYWoJRIEDMRTY3XWsbCYpNJgLyZg-g18RZByVGfi2ebxYa4FNUCmBVcRXeeQhERLaTNRSJ-4RaBhLiuxHuhF9yy7VtcPrKS78h5zpWm9v4VNo0fuQ-qeRc48bf1e8AwBduBOM"/>
+<span class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed">SmileWave™</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant mt-2">
+                    Gentle, Family-Friendly Dental Care. Creating healthy, confident smiles for all ages.
+                </p>
+</div>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary dark:text-primary-fixed mb-4">Quick Links</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="text-primary dark:text-primary-fixed font-bold text-label-bold font-label-bold hover:translate-x-1 transition-transform duration-200" href="#">Home</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#about">About Us</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#contact">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary dark:text-primary-fixed mb-4">Services</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#">General Dentistry</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#">Orthodontics</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#">Pediatrics</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#">Cosmetic Care</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#">Emergency</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary dark:text-primary-fixed mb-4">Legal</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold hover:translate-x-1" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6 px-margin-mobile md:px-margin-desktop text-center">
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant text-sm">
+                © 2024 SmileWave™ Pediatric &amp; Multi-Speciality Dental Clinic. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap Reference
+Sitemap: https://indranilsawant.github.io/stitch_smilewave_dental_website/sitemap.xml

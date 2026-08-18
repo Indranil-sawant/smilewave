@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <linearGradient id="favWave" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E" />
+      <stop offset="100%" stop-color="#0D9488" />
+    </linearGradient>
+    <linearGradient id="favSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main wave representing a tooth structure and smile -->
+  <path d="M 15 25 C 22.5 10, 27.5 10, 35 25 C 42.5 40, 47.5 40, 55 25 C 62.5 10, 65 15, 65 25 C 65 42, 55 52, 35 52 C 15 52, 5 42, 5 25 Z" fill="url(#favWave)" transform="translate(-2, 0) scale(0.9)"/>
+  
+  <!-- Secondary overlapping wave representing a smile/flow -->
+  <path d="M 12 30 C 20 18, 25 18, 33 30 C 40 42, 45 42, 53 30 C 53 38, 48 45, 33 45 C 18 45, 12 38, 12 30 Z" fill="url(#favSky)" opacity="0.85" transform="translate(-2, 0) scale(0.9)"/>
+  
+  <!-- Star/Sparkle accent -->
+  <path d="M 52 14 L 54 18 L 58 19 L 55 22 L 56 26 L 52 24 L 48 26 L 49 22 L 46 19 L 50 18 Z" fill="#FB7185" transform="translate(-2, 0) scale(0.9)"/>
+</svg>
