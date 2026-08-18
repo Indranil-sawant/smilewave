@@ -1,32 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%">
-  <!-- Definitions for Gradients -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="100%" height="100%" role="img" aria-label="SmileWave Registered Dental Clinic Logo">
   <defs>
-    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F766E" />
-      <stop offset="100%" stop-color="#0D9488" />
+    <!-- Registered Royal Blue 3D Gradient for SMILE -->
+    <linearGradient id="regBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1DA1FF"/>
+      <stop offset="40%" stop-color="#0072CE"/>
+      <stop offset="85%" stop-color="#004FB8"/>
+      <stop offset="100%" stop-color="#00388A"/>
     </linearGradient>
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#0EA5E9" />
+
+    <!-- Registered Turquoise 3D Gradient for WAVE -->
+    <linearGradient id="regTurquoise" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#26F5E3"/>
+      <stop offset="45%" stop-color="#00CBB8"/>
+      <stop offset="85%" stop-color="#009688"/>
+      <stop offset="100%" stop-color="#006E64"/>
     </linearGradient>
+
+    <!-- Tooth Body Gloss Gradient -->
+    <linearGradient id="regTooth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#E8F6FF"/>
+      <stop offset="100%" stop-color="#BEE3FF"/>
+    </linearGradient>
+
+    <!-- Glossy Specular Bevel Highlight -->
+    <linearGradient id="regHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Crisp Soft Ambient Shadow (Zero Dark Artifacts) -->
+    <filter id="cleanShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#002D5A" flood-opacity="0.12"/>
+    </filter>
   </defs>
 
-  <!-- Logo Mark -->
-  <g transform="translate(10, 10)">
-    <!-- Main wave representing a tooth structure and smile -->
-    <path d="M 15 25 C 22.5 10, 27.5 10, 35 25 C 42.5 40, 47.5 40, 55 25 C 62.5 10, 65 15, 65 25 C 65 42, 55 52, 35 52 C 15 52, 5 42, 5 25 Z" fill="url(#waveGrad)" />
+  <g filter="url(#cleanShadow)" transform="translate(10, 5)">
+    <!-- ==========================================
+       1. TOP ROW: S M [TOOTH EMBLEM] I L E
+       ========================================== -->
+    <!-- S -->
+    <text x="20" y="76" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="70" fill="url(#regBlue)" letter-spacing="1">S</text>
     
-    <!-- Secondary overlapping wave representing a smile/flow -->
-    <path d="M 12 30 C 20 18, 25 18, 33 30 C 40 42, 45 42, 53 30 C 53 38, 48 45, 33 45 C 18 45, 12 38, 12 30 Z" fill="url(#skyGrad)" opacity="0.85" />
-    
-    <!-- Star/Sparkle accent on upper right -->
-    <path d="M 52 14 L 54 18 L 58 19 L 55 22 L 56 26 L 52 24 L 48 26 L 49 22 L 46 19 L 50 18 Z" fill="#FB7185" />
-  </g>
+    <!-- M -->
+    <text x="72" y="76" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="70" fill="url(#regBlue)" letter-spacing="1">M</text>
 
-  <!-- Brand Name Typography -->
-  <text x="85" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#0F766E">SmileWave</text>
-  <!-- Trademark Symbol -->
-  <text x="245" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748B">TM</text>
-  <!-- Sub-tagline -->
-  <text x="86" y="62" font-family="'Manrope', sans-serif" font-size="11" font-weight="600" letter-spacing="0.12em" fill="#64748B" text-transform="uppercase">PEDIATRIC &amp; FAMILY DENTAL</text>
+    <!-- REGISTERED TOOTH EMBLEM & SMILE SWOOSH (Center M-Space) -->
+    <g transform="translate(155, 6)">
+      <!-- Tooth Outer Silhouette -->
+      <path d="M 35,16 
+               C 35,6 48,0 55,8 
+               C 60,12 62,12 67,8 
+               C 74,0 87,6 87,16 
+               C 87,36 79,54 73,65 
+               C 70,70 65,70 63,65 
+               C 59,54 56,54 52,65 
+               C 50,70 45,70 42,65 
+               C 36,54 35,36 35,16 Z" 
+            fill="url(#regTooth)" stroke="#0072CE" stroke-width="4"/>
+
+      <!-- Tooth Internal Specular Highlight -->
+      <path d="M 42,17 C 42,10 49,6 54,12 C 50,23 48,37 50,50 C 45,40 42,29 42,17 Z" 
+            fill="url(#regHighlight)"/>
+
+      <!-- Smile Curve Swoosh Cradling Tooth Base -->
+      <path d="M 16,40 C 36,68 76,78 104,52" 
+            fill="none" stroke="url(#regTurquoise)" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 18,38 C 37,64 74,74 102,50" 
+            fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    </g>
+
+    <!-- I L E -->
+    <text x="280" y="76" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="70" fill="url(#regBlue)" letter-spacing="1">I</text>
+    <text x="312" y="76" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="70" fill="url(#regBlue)" letter-spacing="1">L</text>
+    <text x="364" y="76" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="70" fill="url(#regBlue)" letter-spacing="1">E</text>
+
+
+    <!-- ==========================================
+       2. SECOND ROW: W A V E
+       ========================================== -->
+    <g transform="translate(102, 146)">
+      <text x="0" y="0" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="68" fill="url(#regTurquoise)" letter-spacing="4">WAVE</text>
+      <!-- Glossy Top Rim Bevel Outline -->
+      <text x="0" y="-2" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="68" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" letter-spacing="4" opacity="0.8">WAVE</text>
+    </g>
+
+
+    <!-- ==========================================
+       3. THIRD ROW: TAGLINE & DIVIDER ACCENTS
+       ========================================== -->
+    <g transform="translate(0, 172)">
+      <!-- Divider Line left -->
+      <line x1="20" y1="-5" x2="65" y2="-5" stroke="#0072CE" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+      
+      <!-- Subtext -->
+      <text x="250" y="0" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Manrope', sans-serif" font-weight="800" font-size="13.5" letter-spacing="2.2" fill="#0064B8">
+        PEDIATRIC &amp; MULTI-SPECIALITY DENTAL CLINIC
+      </text>
+
+      <!-- Divider Line right -->
+      <line x1="435" y1="-5" x2="480" y2="-5" stroke="#0072CE" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    </g>
+  </g>
 </svg>

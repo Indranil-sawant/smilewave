@@ -6,6 +6,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     initStickyHeader();
     initMobileMenu();
+    initMobileServicesAccordion();
+    initConcernAccordion();
     initFAQAccordion();
     initTestimonialSlider();
     initScrollAnimations();
@@ -295,7 +297,7 @@ function initAppointmentForm() {
         
         // 1. Full name validation
         if (!nameInput.value.trim()) {
-            setError(nameInput, 'Full name is required');
+            setError(nameInput, 'Please enter your name.');
             isValid = false;
         } else {
             clearError(nameInput);
@@ -304,11 +306,8 @@ function initAppointmentForm() {
         // 2. Indian Phone number validation (+91/0 and 10 digits starting with 6-9)
         const phoneVal = phoneInput.value.trim().replace(/\s+/g, '');
         const phoneRegex = /^(?:\+91|0)?[6-9]\d{9}$/;
-        if (!phoneVal) {
-            setError(phoneInput, 'Phone number is required');
-            isValid = false;
-        } else if (!phoneRegex.test(phoneVal)) {
-            setError(phoneInput, 'Please enter a valid 10-digit Indian phone number');
+        if (!phoneVal || !phoneRegex.test(phoneVal)) {
+            setError(phoneInput, 'Please enter a valid phone number.');
             isValid = false;
         } else {
             clearError(phoneInput);
@@ -318,7 +317,7 @@ function initAppointmentForm() {
         const emailVal = emailInput.value.trim();
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (emailVal && !emailRegex.test(emailVal)) {
-            setError(emailInput, 'Please enter a valid email address');
+            setError(emailInput, 'Please enter a valid email address.');
             isValid = false;
         } else {
             clearError(emailInput);
@@ -326,7 +325,7 @@ function initAppointmentForm() {
 
         // 4. Service validation
         if (!serviceSelect.value) {
-            setError(serviceSelect, 'Please select a service');
+            setError(serviceSelect, 'Please select a service or concern.');
             isValid = false;
         } else {
             clearError(serviceSelect);
@@ -436,6 +435,51 @@ function initBackToTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
+        });
+    });
+}
+
+/**
+ * 8. Mobile Dropdown Navigation Services Accordion
+ */
+function initMobileServicesAccordion() {
+    const dropdownToggle = document.querySelector('.nav-links li.has-dropdown > a');
+    const dropdownLi = document.querySelector('.nav-links li.has-dropdown');
+    
+    if (!dropdownToggle || !dropdownLi) return;
+
+    dropdownToggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdownLi.classList.toggle('active');
+        }
+    });
+}
+
+/**
+ * 9. Concerns Interactive Accordion List
+ */
+function initConcernAccordion() {
+    const concernItems = document.querySelectorAll('.concern-item');
+    if (concernItems.length === 0) return;
+
+    concernItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other concern items
+            concernItems.forEach(other => {
+                if (other !== item) {
+                    other.classList.remove('active');
+                }
+            });
+
+            // Toggle current item
+            if (isActive) {
+                item.classList.remove('active');
+            } else {
+                item.classList.add('active');
+            }
         });
     });
 }

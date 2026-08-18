@@ -6,35 +6,22 @@
   <title>SmileWave Dental Clinic | Pediatric &amp; Family Dentist in Borivali West</title>
   <meta name="description" content="SmileWave Pediatric &amp; Multi-Speciality Dental Clinic in Borivali West provides child-friendly and family dental care, preventive dentistry, root canal, restorative and cosmetic treatments.">
   <link rel="canonical" href="https://indranilsawant.github.io/stitch_smilewave_dental_website/index.html">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://indranilsawant.github.io/stitch_smilewave_dental_website/index.html">
-  <meta property="og:title" content="SmileWave Dental Clinic | Pediatric &amp; Family Dentist in Borivali West">
-  <meta property="og:description" content="SmileWave Pediatric &amp; Multi-Speciality Dental Clinic in Borivali West provides child-friendly and family dental care, preventive dentistry, root canal, restorative and cosmetic treatments.">
-  <meta property="og:image" content="./images/hero.webp">
-
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
-
-  <!-- JSON-LD Structured Data for Local Dental Business -->
+  
+  <!-- LocalBusiness Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dentist",
     "name": "SmileWave™ Pediatric & Multi-Speciality Dental Clinic",
-    "image": "https://indranilsawant.github.io/stitch_smilewave_dental_website/images/hero.webp",
-    "@id": "https://indranilsawant.github.io/stitch_smilewave_dental_website/#dentist",
-    "url": "https://indranilsawant.github.io/stitch_smilewave_dental_website/",
+    "image": "https://indranilsawant.github.io/stitch_smilewave_dental_website/images/clinic-gmaps-1.jpg",
+    "@id": "https://indranilsawant.github.io/stitch_smilewave_dental_website/#clinic",
+    "url": "https://indranilsawant.github.io/stitch_smilewave_dental_website/index.html",
     "telephone": "+919769311848",
     "priceRange": "$$",
     "address": {
@@ -46,8 +33,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 19.2393,
-      "longitude": 72.8458
+      "latitude": 19.2392769,
+      "longitude": 72.8436577
     },
     "openingHoursSpecification": [
       {
@@ -70,17 +57,17 @@
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
+  <!-- 1. Announcement Bar -->
   <div class="announcement-bar">
     Gentle, Family-Friendly Dental Care in Borivali West | 
-    <a href="./contact.html#appointment">Book an Appointment →</a>
+    <a href="#appointment">Book an Appointment →</a>
   </div>
 
-  <!-- Header / Navigation -->
+  <!-- 2. Navigation Header -->
   <header>
     <div class="container navbar">
       <a href="./index.html" class="logo" aria-label="SmileWave Dental Clinic Homepage">
-        <img src="./images/logo.svg" alt="SmileWave Logo">
+        <img src="./images/logo.png" alt="SmileWave Logo">
       </a>
       
       <!-- Hamburger Menu Toggle (Mobile) -->
@@ -97,38 +84,52 @@
         <ul class="nav-links">
           <li><a href="./index.html" class="active">Home</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="./services.html">Services</a></li>
+          <li class="has-dropdown">
+            <a href="./services.html">
+              Services
+              <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./pediatric-dentistry.html">Pediatric Dentistry</a></li>
+              <li><a href="./services.html#preventive">Preventive Dentistry</a></li>
+              <li><a href="./root-canal-treatment.html">Root Canal Treatment</a></li>
+              <li><a href="./restorative-dentistry.html">Restorative Dentistry</a></li>
+              <li><a href="./dental-implants.html">Dental Implants</a></li>
+              <li><a href="./cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+            </ul>
+          </li>
           <li><a href="./index.html#why-smilewave">Why SmileWave</a></li>
+          <li><a href="./index.html#first-visit">Patient Guide</a></li>
           <li><a href="./faq.html">FAQs</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <li class="mobile-only-menu-cta"><a href="./contact.html#appointment" class="btn btn-primary">Book Appointment</a></li>
+          <li class="mobile-only-menu-cta"><a href="#appointment" class="btn btn-primary">Book Appointment</a></li>
           <li class="mobile-only-menu-cta"><a href="tel:+919769311848" class="btn btn-secondary">Call Clinic</a></li>
         </ul>
       </nav>
 
       <!-- CTA -->
       <div class="nav-cta">
-        <a href="./contact.html#appointment" class="btn btn-primary">Book Appointment</a>
+        <a href="#appointment" class="btn btn-primary">Book Appointment</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- 3. Hero Section -->
     <section class="hero container" aria-label="Hero Section">
       <div class="hero-grid">
         <div class="hero-content reveal">
-          <span class="eyebrow">PEDIATRIC &amp; MULTI-SPECIALITY DENTAL CARE</span>
+          <span class="eyebrow">FAMILY &amp; KIDS DENTAL CARE</span>
           <h1>Healthy Smiles Start With Gentle Care.</h1>
-          <p class="text-muted">From your child's first dental visit to comprehensive dental care for the whole family, SmileWave provides gentle, personalized treatment in a comfortable and welcoming environment.</p>
+          <p class="text-muted">Comfortable, personalized dental care for children, adults, and families in Borivali West.</p>
           <div class="hero-cta">
-            <a href="./contact.html#appointment" class="btn btn-primary">Book an Appointment</a>
-            <a href="tel:+919769311848" class="btn btn-secondary">Call +91 97693 11848</a>
+            <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+            <a href="tel:+919769311848" class="btn btn-secondary">Call Clinic</a>
           </div>
           <div class="hero-badges">
             <div class="hero-badge-item">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <span>Pediatric Dentist in Borivali West</span>
+              <span>Pediatric Care</span>
             </div>
             <div class="hero-badge-item">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -141,21 +142,88 @@
           </div>
         </div>
         <div class="hero-image-wrapper reveal">
-          <img src="./images/hero.webp" alt="A friendly dentist with a relaxed child in a modern dental chair" class="hero-image" width="600" height="450">
+          <img src="./images/hero.webp" alt="A dentist with a child in a dental clinic chair" class="hero-image" width="600" height="450" fetchpriority="high">
           <div class="hero-card">
-            <div class="hero-card-icon">
+            <div class="hero-card-icon" style="background-color: var(--secondary-light);">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
             </div>
             <div>
               <div class="hero-card-title">Comfort-First Care</div>
-              <div class="hero-card-text">Specialized techniques to reduce dental anxiety for all ages.</div>
+              <div class="hero-card-text">Specialized approach to support anxious patients.</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Stats / Trust Indicators -->
+    <!-- 4. Quick Patient Needs Section -->
+    <section class="section-gap bg-light" aria-label="Quick Patient Needs">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">WHAT BRINGS YOU IN TODAY?</span>
+          <h2>Quick Dental Solutions</h2>
+          <p class="text-muted">Select the concern that matches your dental needs to explore direct clinical solutions.</p>
+        </div>
+        <div class="quick-needs-container reveal">
+          <!-- Card 1 -->
+          <div class="quick-needs-card">
+            <div class="quick-needs-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">My Child Needs a Dentist</h3>
+            <p class="text-muted" style="font-size: 0.875rem; margin: 0; line-height: 1.6;">Pediatric dental check-ups and child-friendly care plans.</p>
+            <a href="./pediatric-dentistry.html" class="btn btn-primary" style="margin-top: auto; font-size: 0.85rem; min-height: 2.75rem; width: 100%;">Explore Kids Dentistry</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="quick-needs-card">
+            <div class="quick-needs-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">I Have Tooth Pain</h3>
+            <p class="text-muted" style="font-size: 0.875rem; margin: 0; line-height: 1.6;">Get your dental concern assessed and understand options.</p>
+            <a href="tel:+919769311848" class="btn btn-primary" style="margin-top: auto; font-size: 0.85rem; min-height: 2.75rem; width: 100%;">Talk to the Clinic</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="quick-needs-card">
+            <div class="quick-needs-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">I Need a Root Canal</h3>
+            <p class="text-muted" style="font-size: 0.875rem; margin: 0; line-height: 1.6;">Learn about root canal treatment and tooth-preserving options.</p>
+            <a href="./root-canal-treatment.html" class="btn btn-primary" style="margin-top: auto; font-size: 0.85rem; min-height: 2.75rem; width: 100%;">Root Canal Treatment</a>
+          </div>
+          <!-- Card 4 -->
+          <div class="quick-needs-card">
+            <div class="quick-needs-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="5" r="3"/><path d="M12 22V8M5 12h14"/></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">I Have a Missing Tooth</h3>
+            <p class="text-muted" style="font-size: 0.875rem; margin: 0; line-height: 1.6;">Explore replacement options such as dental implants after check.</p>
+            <a href="./dental-implants.html" class="btn btn-primary" style="margin-top: auto; font-size: 0.85rem; min-height: 2.75rem; width: 100%;">Explore Tooth Replacement</a>
+          </div>
+          <!-- Card 5 -->
+          <div class="quick-needs-card">
+            <div class="quick-needs-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">I Want a Better Smile</h3>
+            <p class="text-muted" style="font-size: 0.875rem; margin: 0; line-height: 1.6;">Explore cosmetic and smile-enhancement options.</p>
+            <a href="./cosmetic-dentistry.html" class="btn btn-primary" style="margin-top: auto; font-size: 0.85rem; min-height: 2.75rem; width: 100%;">Explore Smile Care</a>
+          </div>
+          <!-- Card 6 -->
+          <div class="quick-needs-card">
+            <div class="quick-needs-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">I Need a Routine Check</h3>
+            <p class="text-muted" style="font-size: 0.875rem; margin: 0; line-height: 1.6;">Preventive dental care and regular check-ups.</p>
+            <a href="#appointment" class="btn btn-primary" style="margin-top: auto; font-size: 0.85rem; min-height: 2.75rem; width: 100%;">Book a Check-Up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Trust Indicators Section -->
     <section class="stats" aria-label="Clinic Statistics" style="border: none; padding: 2rem 0; overflow: hidden; background: transparent;">
       <div class="container reveal">
         <div class="trust-strip-container">
@@ -185,19 +253,19 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <h4 style="margin: 0; font-size: 1.1rem; font-weight: 800; color: var(--primary-dark);">Borivali West</h4>
-            <p class="text-muted" style="font-size: 0.8rem; margin: 0;">Behind Shanti Ashram Bus Depot, easy parking.</p>
+            <p class="text-muted" style="font-size: 0.8rem; margin: 0;">Near Shanti Ashram depot, cross Cross Road 4.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Introduction Section -->
+    <!-- 6. Introduction Section -->
     <section class="section-gap container" aria-label="Welcome Introduction">
       <div class="intro-grid">
         <div class="overlap-composition reveal">
-          <img src="./images/clinic.webp" alt="Clean, inviting waiting lounge of SmileWave Dental Clinic in Devki Nagar" class="overlap-img-main" width="550" height="400">
+          <img src="./images/clinic.webp" alt="Waiting lounge of SmileWave Dental Clinic in Devki Nagar" class="overlap-img-main" width="550" height="400" loading="lazy">
           <div class="overlap-card-floating">
-            <div class="hero-card-icon" style="background-color: var(--secondary-light);">
+            <div class="hero-card-icon" style="background-color: var(--secondary-light); color: var(--primary);">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div>
@@ -209,7 +277,7 @@
         <div class="intro-content reveal">
           <span class="eyebrow">ABOUT SMILEWAVE</span>
           <h2>A Dental Clinic Where Your Family Feels at Home</h2>
-          <p class="intro-p text-muted">A visit to the dentist doesn't have to be stressful. We design experiences around comfort and trust.</p>
+          <p class="intro-p text-muted">A visit to the dentist should feel comfortable. We design experiences around patient comfort and visual trust.</p>
           <div class="visual-quote">
             <blockquote>"Healthy teeth. Comfortable treatment. Confident smiles."</blockquote>
           </div>
@@ -221,628 +289,832 @@
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="section-gap bg-light" id="services" aria-label="Dental Services">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">OUR CLINICAL SERVICES</span>
-          <h2>Comprehensive Dental Care for Everyone</h2>
-          <p class="text-muted">From specialized kids' dental visits to complex restoration treatments, we support your family's lifelong journey of oral health.</p>
-        </div>
-
-        <!-- 1. Featured Service: Pediatric Dentistry -->
-        <div class="asymmetric-grid reveal" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-2xl); overflow: hidden; margin-bottom: 2.5rem; box-shadow: var(--shadow-md);">
-          <img src="./images/pediatric.webp" alt="Happy child during a dental check-up" class="pediatric-image" style="width: 100%; height: 100%; min-height: 380px; object-fit: cover;">
-          <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; gap: 1.25rem;">
-            <div class="trust-chip">Kids Specialist</div>
-            <h3 style="margin: 0; font-size: 1.85rem; font-weight: 800; color: var(--primary-dark);">Pediatric Dentistry</h3>
-            <p class="text-muted" style="margin: 0; font-size: 0.95rem; line-height: 1.6;">Our clinic is custom-configured to provide a comforting environment for children. We focus on positive experiences that build lifelong dental hygiene habits.</p>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; padding: 0; margin: 0.5rem 0;">
-              <li style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.9rem; color: var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="color: var(--primary);"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Ceiling entertainment for kids during procedures</span>
-              </li>
-              <li style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.9rem; color: var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="color: var(--primary);"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Painless cavity sealants &amp; fluoride therapy</span>
-              </li>
-              <li style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.9rem; color: var(--text-muted);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="color: var(--primary);"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Patience-led "Tell-Show-Do" methods</span>
-              </li>
-            </ul>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-              <a href="./pediatric-dentistry.html" class="btn btn-primary">Explore Pediatric Care</a>
-              <a href="./contact.html#appointment" class="btn btn-secondary">Request Call</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2. Intermediate Grid (Preventive, RCT, Restorative, Cosmetic) -->
-        <div class="grid-cols-2" style="margin-bottom: 2.5rem;">
-          <!-- Preventive Care -->
-          <article class="card hover-lift reveal">
-            <div class="card-icon" style="background-color: var(--secondary-light);">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3 class="card-title">Preventive Dentistry</h3>
-            <p class="card-desc">Regular examinations, professional scaling &amp; polishing, and dental coaching to resolve plaque issues before they require complex treatments.</p>
-            <a href="./services.html#preventive" class="card-link">
-              <span>Learn About Preventive Care &rarr;</span>
-            </a>
-          </article>
-
-          <!-- Root Canal Treatment -->
-          <article class="card hover-lift reveal">
-            <div class="card-icon" style="background-color: var(--secondary-light);">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3 class="card-title">Root Canal Treatment</h3>
-            <p class="card-desc">Comfort-focused therapy designed to clean out severe pulp infections and seal roots, preserving your natural tooth structures safely.</p>
-            <a href="./root-canal-treatment.html" class="card-link">
-              <span>View Treatment Steps &rarr;</span>
-            </a>
-          </article>
-
-          <!-- Restorative Dentistry -->
-          <article class="card hover-lift reveal">
-            <div class="card-icon" style="background-color: var(--secondary-light);">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            </div>
-            <h3 class="card-title">Restorative Dentistry</h3>
-            <p class="card-desc">Advanced composite fillings, crowns, and bridges to restore the structural strength, alignment, and chewing capacity of broken teeth.</p>
-            <a href="./restorative-dentistry.html" class="card-link">
-              <span>Explore Options &rarr;</span>
-            </a>
-          </article>
-
-          <!-- Cosmetic Dentistry -->
-          <article class="card hover-lift reveal">
-            <div class="card-icon" style="background-color: var(--secondary-light);">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3 class="card-title">Cosmetic Dentistry</h3>
-            <p class="card-desc">Professional teeth whitening, customized porcelain veneers, and cosmetic composite bonding to align and color-match visible front teeth.</p>
-            <a href="./cosmetic-dentistry.html" class="card-link">
-              <span>View Cosmetic Services &rarr;</span>
-            </a>
-          </article>
-        </div>
-
-        <!-- 3. Bottom Featured Section: Dental Implants -->
-        <div class="asymmetric-grid asymmetric-reversed reveal" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-2xl); overflow: hidden; box-shadow: var(--shadow-md);">
-          <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; gap: 1.25rem;">
-            <div class="trust-chip" style="background-color: var(--accent-light); color: var(--accent-dark);">Precision Surgery</div>
-            <h3 style="margin: 0; font-size: 1.85rem; font-weight: 800; color: var(--primary-dark);">Dental Implants</h3>
-            <p class="text-muted" style="margin: 0; font-size: 0.95rem; line-height: 1.6;">A stable, permanent clinical alternative for missing teeth. Titanium posts integrate with the jawbone to anchor high-grade custom porcelain crowns securely.</p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
-              <a href="./dental-implants.html" class="btn btn-primary">implant details</a>
-              <a href="tel:+919769311848" class="btn btn-secondary">Call Clinic</a>
-            </div>
-          </div>
-          <img src="./images/clinic-jd-1.jpg" alt="State of the art dental clinic surgery equipment" class="pediatric-image" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover;">
-        </div>
-      </div>
-    </section>
-
-    <!-- Pediatric Feature Section -->
-    <section class="section-gap container" aria-label="Pediatric Dentistry Feature">
+    <!-- 7. Featured Pediatric Section -->
+    <section class="section-gap container" aria-label="Featured Pediatric Dentistry">
       <div class="asymmetric-grid reveal">
         <div class="overlap-composition">
-          <img src="./images/dentist-child.webp" alt="A child laughing with a dentist during their dental cleaning check-up" class="overlap-img-main" width="550" height="450" loading="lazy">
+          <img src="./images/dentist-child.webp" alt="A child smiling during their dental visit" class="overlap-img-main" width="550" height="450" loading="lazy">
           <div class="overlap-card-floating overlap-card-floating-left" style="bottom: 2rem;">
             <div class="hero-card-icon" style="background-color: var(--secondary-light); color: var(--primary);">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
             </div>
             <div>
-              <div style="font-weight: 800; font-size: 1.1rem; color: var(--primary-dark);">Happy Kids</div>
-              <div style="font-size: 0.75rem; color: var(--text-muted);">Painless clinical pediatric care</div>
+              <div style="font-weight: 800; font-size: 1.1rem; color: var(--primary-dark);">Dr. Raviraj Dhumal</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">MDS Pediatric Dentist</div>
             </div>
           </div>
         </div>
         <div class="intro-content">
-          <span class="eyebrow">OUR SPECIALIZED CARE</span>
+          <span class="eyebrow">PEDIATRIC FOCUS</span>
           <h2>Little Patients. Big Smiles.</h2>
-          <p class="text-muted">A child's first experiences with the dentist can shape how they feel about dental care for years to come. That's why we aim to make every pediatric visit friendly, gentle, and easy to understand.</p>
+          <p class="intro-p text-muted">A gentler approach to children's dental care.</p>
+          <p class="text-muted">A child's first dental experiences can influence how they feel about dental visits in the future. SmileWave focuses on making pediatric appointments comfortable, friendly, and easy to understand.</p>
           <div class="pediatric-features" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1rem;">
             <div class="pediatric-feature-item">
               <svg class="pediatric-feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <h4 class="pediatric-feature-title">Gentle Visits</h4>
-                <p class="pediatric-feature-text">Playful tools &amp; techniques to keep kids stress-free.</p>
+                <h4 class="pediatric-feature-title">Friendly First Visits</h4>
+                <p class="pediatric-feature-text">Help children become comfortable with the dental setting.</p>
               </div>
             </div>
             <div class="pediatric-feature-item">
               <svg class="pediatric-feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <h4 class="pediatric-feature-title">Positive Dental Habits</h4>
-                <p class="pediatric-feature-text">Helping children learn how to brush and care for teeth.</p>
+                <h4 class="pediatric-feature-title">Preventive Care</h4>
+                <p class="pediatric-feature-text">Encourage healthy habits and early cavity detection.</p>
               </div>
             </div>
             <div class="pediatric-feature-item">
               <svg class="pediatric-feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <h4 class="pediatric-feature-title">Child-Friendly Communication</h4>
-                <p class="pediatric-feature-text">Clear explanations matching the child's age logic.</p>
+                <h4 class="pediatric-feature-title">Gentle Communication</h4>
+                <p class="pediatric-feature-text">Explain steps clearly to match the child's understanding.</p>
               </div>
             </div>
             <div class="pediatric-feature-item">
               <svg class="pediatric-feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
                 <h4 class="pediatric-feature-title">Growing Smiles</h4>
-                <p class="pediatric-feature-text">Preventive treatments such as cavity sealants.</p>
+                <p class="pediatric-feature-text">Monitor orthodontic growth and seal erupting molars.</p>
               </div>
             </div>
           </div>
-          <div style="margin-top: 1.5rem;">
-            <a href="./pediatric-dentistry.html" class="btn btn-accent">Book Your Child's Visit</a>
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="./pediatric-dentistry.html" class="btn btn-primary">Explore Pediatric Dentistry</a>
+            <a href="#appointment" class="btn btn-accent">Book Your Child's Visit</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why SmileWave Bento Grid -->
-    <section class="section-gap bg-light" id="why-smilewave" aria-label="Why SmileWave">
-      <div class="container">
-        <div class="asymmetric-grid reveal" style="align-items: center; margin-bottom: 2rem;">
-          <div>
-            <span class="eyebrow">THE SMILEWAVE DIFFERENCE</span>
-            <h2 style="font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.15; margin-bottom: 2rem; color: #0F172A;">Why Families Trust SmileWave</h2>
-            <p class="text-muted" style="margin-bottom: 2.5rem; font-size: 1.05rem;">A clinical yet approachable environment designed around the physical and emotional comfort of our patients in Borivali West.</p>
-            <a href="./about.html" class="btn btn-primary">Our Full Philosophy</a>
-          </div>
-          <div class="overlap-composition reveal">
-            <img src="./images/clinic-gmaps-1.jpg" alt="Vibrant treatment chair at SmileWave Dental Clinic" class="overlap-img-main" style="width: 90%; aspect-ratio: 4/3; object-fit: cover;">
-          </div>
-        </div>
-
-        <div class="grid-cols-2" style="margin-top: 4rem; gap: 3rem;">
-          <div style="display: flex; gap: 1.5rem; align-items: flex-start;" class="reveal">
-            <span style="font-size: 3rem; font-weight: 800; color: var(--primary); line-height: 1; font-family: 'Plus Jakarta Sans', sans-serif;">01</span>
-            <div>
-              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">Child-Friendly</h4>
-              <p class="text-muted" style="margin: 0; font-size: 0.9rem;">Patience-led Tell-Show-Do dental visits tailored to young children to resolve clinic fears.</p>
-            </div>
-          </div>
-          <div style="display: flex; gap: 1.5rem; align-items: flex-start;" class="reveal">
-            <span style="font-size: 3rem; font-weight: 800; color: var(--primary); line-height: 1; font-family: 'Plus Jakarta Sans', sans-serif;">02</span>
-            <div>
-              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">Personalized Care</h4>
-              <p class="text-muted" style="margin: 0; font-size: 0.9rem;">Comprehensive care plans customized explicitly for your actual lifestyle & clinical priorities.</p>
-            </div>
-          </div>
-          <div style="display: flex; gap: 1.5rem; align-items: flex-start;" class="reveal">
-            <span style="font-size: 3rem; font-weight: 800; color: var(--primary); line-height: 1; font-family: 'Plus Jakarta Sans', sans-serif;">03</span>
-            <div>
-              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">Modern Diagnostics</h4>
-              <p class="text-muted" style="margin: 0; font-size: 0.9rem;">State-of-the-art digital dental planning tools, and Class-B autoclave sterilisation.</p>
-            </div>
-          </div>
-          <div style="display: flex; gap: 1.5rem; align-items: flex-start;" class="reveal">
-            <span style="font-size: 3rem; font-weight: 800; color: var(--primary); line-height: 1; font-family: 'Plus Jakarta Sans', sans-serif;">04</span>
-            <div>
-              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">Family-Focused</h4>
-              <p class="text-muted" style="margin: 0; font-size: 0.9rem;">A unified practice equipped to care for both toddler first appointments and adult crowns.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modern Dentistry Technology -->
-    <section class="section-gap container" aria-label="Modern Diagnostics">
-      <div class="modern-grid">
-        <div class="reveal" style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <span class="eyebrow">ADVANCED DENTISTRY</span>
-          <h2>Modern Dentistry. Human Approach.</h2>
-          <p class="text-muted">Technology is at its best when it serves human comfort. We combine advanced diagnostic tools with a gentle touch to make treatments predictable and painless.</p>
-          <div style="display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 0.5rem;">
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div class="hero-card-icon" style="width: 32px; height: 32px; font-size: 0.8rem; background-color: var(--secondary-light); color: var(--primary); margin-top: 0.15rem;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <div>
-                <h4 style="margin: 0 0 0.25rem 0; font-size: 1.05rem; font-weight: 800; color: var(--primary-dark);">Modern Diagnostics</h4>
-                <p class="text-muted" style="margin: 0; font-size: 0.85rem;">Ultra-low radiation digital X-rays to check underlying structure safety.</p>
-              </div>
-            </div>
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div class="hero-card-icon" style="width: 32px; height: 32px; font-size: 0.8rem; background-color: var(--secondary-light); color: var(--primary); margin-top: 0.15rem;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <div>
-                <h4 style="margin: 0 0 0.25rem 0; font-size: 1.05rem; font-weight: 800; color: var(--primary-dark);">Digital Dentistry</h4>
-                <p class="text-muted" style="margin: 0; font-size: 0.85rem;">Intraoral imaging and digital scanning for precise and visual diagnostics.</p>
-              </div>
-            </div>
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div class="hero-card-icon" style="width: 32px; height: 32px; font-size: 0.8rem; background-color: var(--secondary-light); color: var(--primary); margin-top: 0.15rem;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <div>
-                <h4 style="margin: 0 0 0.25rem 0; font-size: 1.05rem; font-weight: 800; color: var(--primary-dark);">Restorative Solutions</h4>
-                <p class="text-muted" style="margin: 0; font-size: 0.85rem;">State-of-the-art dental materials for long-lasting structural results.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="overlap-composition reveal">
-          <img src="./images/clinic-jd-1.jpg" alt="Vibrant treatment chair showing modern technology setup" class="overlap-img-main" style="width: 90%; aspect-ratio: 4/3; object-fit: cover;">
-          <div class="overlap-card-floating">
-            <div class="hero-card-icon" style="background-color: var(--secondary-light); color: var(--primary);">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <div>
-              <div style="font-weight: 800; font-size: 1.1rem; color: var(--primary-dark);">Digital Planning</div>
-              <div style="font-size: 0.75rem; color: var(--text-muted);">Visual treatment roadmap</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Patient Journey Timeline -->
-    <section class="section-gap bg-light" aria-label="Patient Journey">
+    <!-- 8. Services Section (Patient-Centric Organization) -->
+    <section class="section-gap bg-light" id="services" aria-label="Dental Services">
       <div class="container">
         <div class="section-header reveal">
-          <span class="eyebrow">YOUR VISIT</span>
-          <h2>The Patient Journey at SmileWave</h2>
-          <p class="text-muted">What to expect when scheduling and visiting our clinic in Borivali West.</p>
+          <span class="eyebrow">OUR CLINICAL SERVICES</span>
+          <h2>Patient-Centric Dental Care</h2>
+          <p class="text-muted">We organize our care solutions around your primary needs and goals.</p>
         </div>
-        <div class="timeline">
-          <div class="timeline-step reveal">
-            <div class="timeline-number">01</div>
-            <h4 class="timeline-title">Book</h4>
-            <p class="timeline-desc">Schedule your appointment online or call our support staff.</p>
-          </div>
-          <div class="timeline-step reveal">
-            <div class="timeline-number">02</div>
-            <h4 class="timeline-title">Consult</h4>
-            <p class="timeline-desc">Discuss your family's oral concerns and history comfortably.</p>
-          </div>
-          <div class="timeline-step reveal">
-            <div class="timeline-number">03</div>
-            <h4 class="timeline-title">Diagnose</h4>
-            <p class="timeline-desc">Understand your dental health status with clear visual details.</p>
-          </div>
-          <div class="timeline-step reveal">
-            <div class="timeline-number">04</div>
-            <h4 class="timeline-title">Plan</h4>
-            <p class="timeline-desc">Review suitable treatment options, timelines, and costs.</p>
-          </div>
-          <div class="timeline-step reveal">
-            <div class="timeline-number">05</div>
-            <h4 class="timeline-title">Treat</h4>
-            <p class="timeline-desc">Receive gentle, stress-free clinical care in a comfortable environment.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="section-gap container" aria-label="Patient Testimonials">
-      <div class="section-header reveal">
-        <span class="eyebrow">PATIENT TESTIMONIALS</span>
-        <h2>What Our Patients Say</h2>
-        <p class="text-muted">Read authentic stories and feedback shared by families who visit our clinic.</p>
-      </div>
-      
-      <div class="testimonial-container reveal">
-        <div class="testimonial-track">
-          <!-- Slide 1 -->
-          <div class="testimonial-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-stars" aria-label="5 star rating">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              </div>
-              <p class="testimonial-text">"Real patient review will be added here. This placeholder represents verified feedback from families in Borivali West who trust SmileWave for comfortable pediatric treatments."</p>
-              <div>
-                <span class="testimonial-author">Verified Google Review</span>
-                <span class="testimonial-source">SmileWave Patient Parent</span>
-              </div>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="testimonial-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-stars" aria-label="5 star rating">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              </div>
-              <p class="testimonial-text">"Another verified review placeholder. Our team is committed to delivering gentle care, ensuring every clinical check-up is comforting for children and adults alike."</p>
-              <div>
-                <span class="testimonial-author">Verified Google Review</span>
-                <span class="testimonial-source">SmileWave Patient</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-nav">
-          <button class="testimonial-nav-btn prev" aria-label="Previous Testimonial">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-          </button>
-          <button class="testimonial-nav-btn next" aria-label="Next Testimonial">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section-gap bg-light" id="faq" aria-label="Frequently Asked Questions">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">COMMON QUERIES</span>
-          <h2>Frequently Asked Questions</h2>
-          <p class="text-muted">Find answers to common questions about appointments, timings, pediatric care, and treatments.</p>
-        </div>
-        <div class="faq-accordion reveal">
-          <!-- FAQ 1 -->
-          <div class="faq-item">
-            <button class="faq-trigger">
-              <span>Is SmileWave suitable for children?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner">
-                Yes, pediatric dentistry is one of our primary focuses. Our clinic layout, staff behavior, and treatment approaches are designed specifically to put children at ease and create a positive experience.
-              </div>
-            </div>
-          </div>
-          <!-- FAQ 2 -->
-          <div class="faq-item">
-            <button class="faq-trigger">
-              <span>At what age should a child visit the dentist?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner">
-                The American Academy of Pediatric Dentistry recommends that a child should visit the dentist by their first birthday or when their first tooth emerges to evaluate early growth patterns and establish oral hygiene standards.
-              </div>
-            </div>
-          </div>
-          <!-- FAQ 3 -->
-          <div class="faq-item">
-            <button class="faq-trigger">
-              <span>Do you provide root canal treatment?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner">
-                Yes, we offer specialized, comfort-focused root canal treatments for infected or severely decayed teeth. We use modern diagnostics and methods to make the procedure as comfortable as possible.
-              </div>
-            </div>
-          </div>
-          <!-- FAQ 4 -->
-          <div class="faq-item">
-            <button class="faq-trigger">
-              <span>Do you treat adults?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner">
-                Yes, SmileWave is a multi-speciality dental clinic. We provide dental care for patients of all ages, including general, restorative, cosmetic, and implant dentistry.
-              </div>
-            </div>
-          </div>
-          <!-- FAQ 5 -->
-          <div class="faq-item">
-            <button class="faq-trigger">
-              <span>How can I book an appointment?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner">
-                You can book an appointment by filling out the online appointment form below, calling us at +91 97693 11848, or visiting our clinic in Devki Nagar, Borivali West.
-              </div>
-            </div>
-          </div>
-          <!-- FAQ 6 -->
-          <div class="faq-item">
-            <button class="faq-trigger">
-              <span>Where is SmileWave located?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner">
-                Our clinic is at Shop No. 5, Atmaram CHS, Kalpana Chawla Marg, Devki Nagar, Borivali West, Mumbai – 400103. A convenient landmark is just behind the Shanti Ashram Bus Depot, near I.C. Colony Cross Road No. 4.
-              </div>
-            </div>
-          </div>
-          <!-- FAQ 7 -->
-          <div class="faq-item">
-            <button class="faq-trigger">
-              <span>What are the clinic timings?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content">
-              <div class="faq-content-inner">
-                We are open every day of the week, Monday through Sunday, from 10:00 AM to 9:30 PM.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Location Section -->
-    <section class="section-gap container" id="location" aria-label="Clinic Location Map">
-      <div class="location-grid">
-        <div class="location-info-wrapper reveal">
-          <span class="eyebrow">OUR CLINIC</span>
-          <h2>Find SmileWave in Borivali West</h2>
-          <p class="text-muted">We are located in a highly accessible ground floor setting in Devki Nagar, welcoming patients from all across Mumbai.</p>
-          
-          <div class="location-card">
-            <div class="location-detail">
-              <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <div>
-                <h4 class="location-detail-title">Clinic Address</h4>
-                <p class="location-detail-text">
-                  Shop No. 5, Atmaram CHS, Kalpana Chawla Marg, Devki Nagar, Borivali West, Mumbai – 400103
-                </p>
-                <p class="location-detail-text" style="font-weight: 600; margin-top: 0.25rem;">
-                  Landmark: Behind Shanti Ashram Bus Depot, near I.C. Colony Cross Road No. 4
-                </p>
-              </div>
+        <div class="grid-cols-2">
+          <!-- Column 1: Kids & Pain -->
+          <div style="display: flex; flex-direction: column; gap: 2rem;">
+            <!-- Category: For Children -->
+            <div class="card reveal" style="padding: 2.25rem;">
+              <h3 style="margin: 0; font-size: 1.4rem; font-weight: 800; color: var(--primary-dark);">For Children</h3>
+              <p class="text-muted" style="margin: 0; font-size: 0.9rem;">Supporting healthy teeth from infancy to adolescence.</p>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem;">
+                <li style="font-size: 0.925rem; color: var(--text);"><a href="./pediatric-dentistry.html" style="color: var(--primary); font-weight: 700;">Pediatric Dentistry &rarr;</a></li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Child Dental Check-Ups</li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Fluoride Treatment &amp; Cavity Sealants</li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Space Maintainers &amp; Pediatric Fillings</li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Early Growth Monitoring</li>
+              </ul>
             </div>
             
-            <div class="location-detail">
-              <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <div>
-                <h4 class="location-detail-title">Call Us</h4>
-                <p class="location-detail-text"><a href="tel:+919769311848" style="font-weight: bold; color: var(--primary);">+91 97693 11848</a></p>
-              </div>
+            <!-- Category: For Dental Pain -->
+            <div class="card reveal" style="padding: 2.25rem;">
+              <h3 style="margin: 0; font-size: 1.4rem; font-weight: 800; color: var(--primary-dark);">For Dental Pain</h3>
+              <p class="text-muted" style="margin: 0; font-size: 0.9rem;">Get your dental concern clinically assessed.</p>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem;">
+                <li style="font-size: 0.925rem; color: var(--text);"><a href="./root-canal-treatment.html" style="color: var(--primary); font-weight: 700;">Root Canal Treatment &rarr;</a></li>
+                <li style="font-size: 0.925rem; color: var(--text);"><a href="./services.html#preventive" style="color: var(--primary); font-weight: 700;">Dental Consultation &rarr;</a></li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Tooth Sensitivity Assessments</li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Composite Dental Fillings</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 2: Restoration & Smile -->
+          <div style="display: flex; flex-direction: column; gap: 2rem;">
+            <!-- Category: Missing/Damaged Teeth -->
+            <div class="card reveal" style="padding: 2.25rem;">
+              <h3 style="margin: 0; font-size: 1.4rem; font-weight: 800; color: var(--primary-dark);">For Missing or Damaged Teeth</h3>
+              <p class="text-muted" style="margin: 0; font-size: 0.9rem;">Restore natural chewing function and aesthetics.</p>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem;">
+                <li style="font-size: 0.925rem; color: var(--text);"><a href="./dental-implants.html" style="color: var(--primary); font-weight: 700;">Dental Implants &rarr;</a></li>
+                <li style="font-size: 0.925rem; color: var(--text);"><a href="./restorative-dentistry.html" style="color: var(--primary); font-weight: 700;">Restorative Dentistry &rarr;</a></li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Dental Crowns &amp; Caps</li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Fixed Bridges &amp; Dentures</li>
+              </ul>
             </div>
 
-            <div class="location-detail">
-              <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <div>
-                <h4 class="location-detail-title">Clinic Timings</h4>
-                <p class="location-detail-text">Monday – Sunday: 10:00 AM – 9:30 PM</p>
-              </div>
+            <!-- Category: Smile Enhancement -->
+            <div class="card reveal" style="padding: 2.25rem;">
+              <h3 style="margin: 0; font-size: 1.4rem; font-weight: 800; color: var(--primary-dark);">For Smile Enhancement</h3>
+              <p class="text-muted" style="margin: 0; font-size: 0.9rem;">Explore cosmetic dental care options.</p>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem;">
+                <li style="font-size: 0.925rem; color: var(--text);"><a href="./cosmetic-dentistry.html" style="color: var(--primary); font-weight: 700;">Cosmetic Dentistry &rarr;</a></li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Professional Teeth Whitening</li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Customized Porcelain Veneers</li>
+                <li style="font-size: 0.925rem; color: var(--text-muted);">&bull; Clear Aligner / Orthodontic Consultation</li>
+              </ul>
             </div>
           </div>
-          
-          <div class="location-ctas">
-            <a href="tel:+919769311848" class="btn btn-secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>Call +91 97693 11848</span>
-            </a>
-            <!-- Placeholder map directions URL for Borivali West Devki Nagar area -->
-            <a href="https://maps.google.com/?q=Atmaram+CHS+Kalpana+Chawla+Marg+Devki+Nagar+Borivali+West+Mumbai+400103" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
-              <span>Get Directions</span>
-            </a>
-          </div>
-        </div>
-        
-        <div class="map-container reveal">
-          <!-- Embed Google Map targeting Devki Nagar Borivali West -->
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1422736467385!2d72.84365777598685!3d19.239276946973804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0d7967b5eb7%3A0x6a05e26b1b87cbf0!2sKalpana+Chawla+Marg%2C+Devki+Nagar%2C+Borivali+West%2C+Mumbai%2C+Maharashtra+400103!5e0!3m2!1sen!2sin!4v1713456789012!5m2!1sen!2sin" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade" 
-            title="Google Map location of SmileWave Dental Clinic in Borivali West">
-          </iframe>
         </div>
       </div>
     </section>
 
-    <!-- Appointment Form Section -->
-    <section class="section-gap bg-light" id="appointment" aria-label="Appointment Booking">
+    <!-- 9. Common Dental Concerns Interactive Grid -->
+    <section class="section-gap container" aria-label="Dental Concerns">
+      <div class="section-header reveal">
+        <span class="eyebrow">PATIENT GUIDANCE</span>
+        <h2>Common Dental Concerns We Help With</h2>
+        <p class="text-muted">Tap on any concern below to understand standard clinical causes and next steps.</p>
+      </div>
+
+      <div class="concern-grid">
+        <!-- Concern 1 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Toothache</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">Tooth pain may indicate active decay, a crack, or pulp inflammation. An exam and X-ray help locate the issue.</p>
+        </div>
+
+        <!-- Concern 2 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <span>Tooth Sensitivity</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">Pain with cold or hot substances often stems from exposed dentin or worn enamel. Sealants or fillings can shield the tooth surface.</p>
+        </div>
+
+        <!-- Concern 3 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+              <span>Cavities</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">Decaying spots in teeth need early intervention. Direct composite fillings stop cavities from reaching internal tooth nerves.</p>
+        </div>
+
+        <!-- Concern 4 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <span>Broken/Damaged Teeth</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">Chipped or fractured structure is repaired using direct bonding veneers or high-strength porcelain crowns to restore chewing shape.</p>
+        </div>
+
+        <!-- Concern 5 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="5" r="3"/><path d="M12 22V8M5 12h14"/></svg>
+              <span>Missing Teeth</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">Gaps can cause adjacent teeth to shift. Long-term replacement options include bone-anchored dental implants or bridges.</p>
+        </div>
+
+        <!-- Concern 6 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              <span>Gum Concerns</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">Bleeding gums or swelling indicates mild to severe periodontal infection. Professional deep scaling cleans plaque buildup.</p>
+        </div>
+
+        <!-- Concern 7 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+              <span>Children's Dental Problems</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">Early cavities or dental anxiety in children are resolved using gentle tell-show-do child dentistry methods.</p>
+        </div>
+
+        <!-- Concern 8 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span>Smile Concerns</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">Spacing or teeth discoloration can be discussed via custom cosmetic smile-enhancement options.</p>
+        </div>
+
+        <!-- Concern 9 -->
+        <div class="concern-item reveal" tabindex="0" role="button" aria-expanded="false">
+          <div class="concern-header">
+            <div class="concern-header-left">
+              <svg class="concern-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Routine Dental Care</span>
+            </div>
+            <svg class="concern-toggle-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <p class="concern-explanation">6-monthly check-ups support prevention. Cleaning removes calculus buildup that regular brushing cannot reach.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Dental Pain / Urgent Concern CTA Section -->
+    <section class="section-gap bg-light" aria-label="Dental Pain Guidance">
+      <div class="container text-center reveal" style="max-width: 800px; display: flex; flex-direction: column; gap: 1.5rem; align-items: center;">
+        <div class="trust-chip" style="background-color: var(--accent-light); color: var(--accent-dark);">Patient Safety Guide</div>
+        <h2 style="margin: 0; color: #0F172A;">Experiencing Dental Pain?</h2>
+        <p class="text-muted" style="margin: 0; font-size: 1.05rem; line-height: 1.6;">Tooth pain, sensitivity, swelling, or a damaged tooth can have different causes. A clinical dental examination can help identify the root cause and determine appropriate treatment solutions.</p>
+        <p class="text-muted" style="font-weight: 700; color: var(--primary-dark); margin: 0.5rem 0;">If you are experiencing a severe or rapidly worsening dental problem, contact the clinic directly for guidance.</p>
+        <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 1rem;">
+          <a href="tel:+919769311848" class="btn btn-primary">Call the Clinic</a>
+          <a href="#appointment" class="btn btn-secondary">Request an Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Preventive Dentistry Section -->
+    <section class="section-gap container" aria-label="Preventive Dentistry">
+      <div class="asymmetric-grid reveal">
+        <div class="intro-content">
+          <span class="eyebrow">PREVENTION FIRST</span>
+          <h2>Prevention Is Part of Great Dental Care</h2>
+          <p class="text-muted">Regular dental visits can help identify issues early and support long-term oral health. Preventive hygiene routines minimize clinical complications down the road.</p>
+          <ul style="list-style: none; padding: 0; margin: 1rem 0; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start; font-size: 0.95rem; color: var(--text-muted);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="color: var(--primary); flex-shrink: 0; margin-top: 0.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Routine Check-Ups:</strong> Detailed clinical examination of teeth and gums.</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start; font-size: 0.95rem; color: var(--text-muted);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="color: var(--primary); flex-shrink: 0; margin-top: 0.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Professional Cleaning:</strong> Plaque and calculus removal by specialists.</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start; font-size: 0.95rem; color: var(--text-muted);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="color: var(--primary); flex-shrink: 0; margin-top: 0.15rem;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Hygiene Coaching:</strong> Custom brushing instruction guides for toddlers &amp; adults.</span>
+            </li>
+          </ul>
+          <div style="margin-top: 1rem;">
+            <a href="#appointment" class="btn btn-primary">Book a Dental Check-Up</a>
+          </div>
+        </div>
+        <div class="overlap-composition">
+          <img src="./images/clinic.webp" alt="Clean waiting lounge interior showing clinic hygiene standards" class="overlap-img-main" width="550" height="400" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Restorative / RCT Section -->
+    <section class="section-gap bg-light" id="rct-restorative" aria-label="Restorative and Root Canal Dentistry">
+      <div class="container" style="display: flex; flex-direction: column; gap: 4rem;">
+        <!-- Part A: RCT -->
+        <div class="asymmetric-grid reveal">
+          <div class="overlap-composition">
+            <img src="./images/clinic-jd-1.jpg" alt="Vibrant treatment chair setup in Borivali West clinic" class="overlap-img-main" width="550" height="400" loading="lazy">
+          </div>
+          <div class="intro-content">
+            <span class="eyebrow">TOOTH PRESERVATION</span>
+            <h2>When a Tooth Needs More Than a Filling</h2>
+            <p class="text-muted">Root canal treatment may be recommended when the inner tissue (pulp) of a tooth becomes infected or significantly inflamed due to decay or injury. Treatment is intended to remove the affected tissue and help preserve your natural tooth.</p>
+            <div style="margin-top: 0.5rem;">
+              <h4 style="margin: 0 0 0.75rem 0; font-size: 1.05rem; font-weight: 800; color: var(--primary-dark);">Clinical Treatment Journey:</h4>
+              <ol style="padding-left: 1.25rem; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                <li>Diagnostic clinical check &amp; low-dose X-ray examination.</li>
+                <li>Pulp infection cleanup and root disinfection.</li>
+                <li>Hermetic root sealing to protect against bacterial entry.</li>
+                <li>Coronal restoration using composite sealants or crowns.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="./root-canal-treatment.html" class="btn btn-primary">Learn About Root Canal Treatment</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part B: Restorative -->
+        <div class="asymmetric-grid asymmetric-reversed reveal" style="border-top: 1px solid var(--border); padding-top: 4rem;">
+          <div class="intro-content">
+            <span class="eyebrow">RECONSTRUCTIVE CARE</span>
+            <h2>Restore Your Tooth. Restore Your Confidence.</h2>
+            <p class="text-muted">Restorative dentistry helps address structurally compromised, broken, or decayed teeth. We rebuild tooth form and strength so you can chew comfortably.</p>
+            <ul style="list-style: none; padding: 0; margin: 0.5rem 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+              <li>&bull; <strong>Composites:</strong> Color-matched tooth fillings.</li>
+              <li>&bull; <strong>Crowns &amp; Restoration:</strong> High-grade caps to protect weak structures.</li>
+              <li>&bull; <strong>Bridges &amp; Replacement:</strong> Stable multi-tooth replacements.</li>
+            </ul>
+            <div style="margin-top: 1rem;">
+              <a href="./restorative-dentistry.html" class="btn btn-secondary">Explore Restorative Care</a>
+            </div>
+          </div>
+          <div class="overlap-composition">
+            <img src="./images/pediatric.webp" alt="Vibrant pediatric check room showing warm natural lighting" class="overlap-img-main" width="550" height="400" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Dental Implants Section -->
+    <section class="section-gap container" id="implants" aria-label="Dental Implants">
+      <div class="asymmetric-grid reveal">
+        <div class="overlap-composition">
+          <img src="./images/clinic-jd-1.jpg" alt="Treatment room chair with digital X-ray scanner monitor" class="overlap-img-main" width="550" height="400" loading="lazy">
+        </div>
+        <div class="intro-content">
+          <span class="eyebrow">TOOTH REPLACEMENT</span>
+          <h2>Replacing Missing Teeth</h2>
+          <p class="text-muted">Dental implants serve as a stable, bone-anchored replacement option for individual missing teeth. Titanium posts function as replacement roots to support single or multiple custom crowns securely.</p>
+          <div style="margin: 0.5rem 0; font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem;">
+            <p><strong>What to Expect:</strong> Suitability depends on an individual clinical check of jawbone density and overall systemic health.</p>
+            <p><strong>Clinical Planning:</strong> High-resolution diagnostics and detailed models shape placement timelines explicitly before surgery.</p>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="./dental-implants.html" class="btn btn-primary">Discuss Tooth Replacement Options</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. Smile Enhancement Section -->
+    <section class="section-gap bg-light" id="smile-care" aria-label="Smile Enhancement">
+      <div class="container reveal">
+        <div class="asymmetric-grid" style="align-items: center;">
+          <div class="intro-content">
+            <span class="eyebrow">COSMETIC DENTISTRY</span>
+            <h2>Feel More Confident About Your Smile</h2>
+            <p class="text-muted">Explore aesthetic smile-enhancement options designed to align, shape, and color-match visible front teeth for a natural visual appeal.</p>
+            <ul style="list-style: none; padding: 0; margin: 0.5rem 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+              <li>&bull; <strong>Professional Teeth Whitening:</strong> Resolving enamel stains safely.</li>
+              <li>&bull; <strong>Porcelain Veneers:</strong> Thin custom shells to adjust spacing and shape.</li>
+              <li>&bull; <strong>Clear Aligner Consultations:</strong> Invisible aligner plans for teeth crowding.</li>
+            </ul>
+            <div style="margin-top: 1rem;">
+              <a href="./cosmetic-dentistry.html" class="btn btn-primary">Discuss Smile Options</a>
+            </div>
+          </div>
+          <div class="overlap-composition">
+            <img src="./images/clinic-gmaps-1.jpg" alt="Vibrant treatment chair showing aesthetic clinical standards" class="overlap-img-main" width="550" height="400" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15. Why SmileWave Section (Bento Grid) -->
+    <section class="section-gap container" id="why-smilewave" aria-label="Why Choose SmileWave">
+      <div class="section-header reveal">
+        <span class="eyebrow">THE SMILEWAVE DIFFERENCE</span>
+        <h2>Why Choose SmileWave?</h2>
+        <p class="text-muted">A clinical practice designed around the comfort and requirements of Borivali families.</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento 1: Large (Pediatric Care) -->
+        <div class="bento-item bento-large reveal">
+          <div class="bento-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+          </div>
+          <h3 style="margin: 0; font-size: 1.35rem; font-weight: 800; color: var(--primary-dark);">Child-Friendly Experience</h3>
+          <p class="text-muted" style="margin: 0; font-size: 0.9rem; line-height: 1.6;">Patience-led Tell-Show-Do dental visits tailored to young children to eliminate fears. ceiling-mounted screen entertainment blocks clinic anxiety during procedures.</p>
+        </div>
+
+        <!-- Bento 2: Medium (Family Dentistry) -->
+        <div class="bento-item bento-medium reveal">
+          <div class="bento-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <h3 style="margin: 0; font-size: 1.35rem; font-weight: 800; color: var(--primary-dark);">Family Dentistry</h3>
+          <p class="text-muted" style="margin: 0; font-size: 0.9rem; line-height: 1.6;">A unified clinic capable of addressing dental procedures for both toddlers and senior grandparents under one roof.</p>
+        </div>
+
+        <!-- Bento 3: Small (Modern Approach) -->
+        <div class="bento-item bento-small reveal">
+          <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">Modern Approach</h3>
+          <p class="text-muted" style="margin: 0; font-size: 0.85rem; line-height: 1.5;">Class-B autoclave sterilization, digital treatment models, and digital X-rays.</p>
+        </div>
+
+        <!-- Bento 4: Small (Borivali West) -->
+        <div class="bento-item bento-small reveal">
+          <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">Borivali West</h3>
+          <p class="text-muted" style="margin: 0; font-size: 0.85rem; line-height: 1.5;">Accessible ground floor clinic in Devki Nagar, behind Shanti Ashram Bus Depot.</p>
+        </div>
+
+        <!-- Bento 5: Small (Clear Communication) -->
+        <div class="bento-item bento-small reveal">
+          <h3 style="margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--primary-dark);">Clear Explanations</h3>
+          <p class="text-muted" style="margin: 0; font-size: 0.85rem; line-height: 1.5;">We explain clinical conditions, treatment timelines, and costs before starting procedures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 16. First Visit / Patient Journey Section -->
+    <section class="section-gap bg-light" id="first-visit" aria-label="First Visit Journey">
       <div class="container">
         <div class="section-header reveal">
-          <span class="eyebrow">ONLINE ENQUIRY</span>
-          <h2>Request an Appointment</h2>
-          <p class="text-muted">Fill out the form below, and our clinic desk will contact you to confirm a convenient slot.</p>
+          <span class="eyebrow">PATIENT GUIDE</span>
+          <h2>What Happens at Your First Visit?</h2>
+          <p class="text-muted">A clear, step-by-step roadmap to make your family's initial visit stress-free.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+          <!-- Step 1 -->
+          <div class="journey-step-card reveal">
+            <span class="journey-step-num">01</span>
+            <div>
+              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 800; color: var(--primary-dark);">Welcome</h4>
+              <p class="text-muted" style="margin: 0; font-size: 0.875rem; line-height: 1.5;">Meet the dental team and get comfortable with the clinic setting.</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="journey-step-card reveal">
+            <span class="journey-step-num">02</span>
+            <div>
+              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 800; color: var(--primary-dark);">Discuss</h4>
+              <p class="text-muted" style="margin: 0; font-size: 0.875rem; line-height: 1.5;">Talk about your specific concerns, pain points, and medical history.</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="journey-step-card reveal">
+            <span class="journey-step-num">03</span>
+            <div>
+              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 800; color: var(--primary-dark);">Examine</h4>
+              <p class="text-muted" style="margin: 0; font-size: 0.875rem; line-height: 1.5;">The dentist evaluates your teeth and performs diagnostic checks.</p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="journey-step-card reveal">
+            <span class="journey-step-num">04</span>
+            <div>
+              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 800; color: var(--primary-dark);">Understand</h4>
+              <p class="text-muted" style="margin: 0; font-size: 0.875rem; line-height: 1.5;">We explain clinical findings clearly using visual dental scans.</p>
+            </div>
+          </div>
+          <!-- Step 5 -->
+          <div class="journey-step-card reveal">
+            <span class="journey-step-num">05</span>
+            <div>
+              <h4 style="margin: 0 0 0.5rem 0; font-size: 1.15rem; font-weight: 800; color: var(--primary-dark);">Plan</h4>
+              <p class="text-muted" style="margin: 0; font-size: 0.875rem; line-height: 1.5;">Review treatment options, timelines, and costs before starting.</p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;" class="reveal">
+          <a href="#appointment" class="btn btn-primary">Book Your First Visit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 21. "What to Expect" Content (Merged with Journey Section) -->
+    <section class="section-gap container" aria-label="First Visit FAQ">
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;" class="reveal">
+        <h3 style="margin: 0; text-align: center; font-size: 1.5rem; font-weight: 800; color: var(--primary-dark);">What to Expect</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 1rem;">
+          <div>
+            <h4 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 0.5rem;">Will the dentist explain the treatment?</h4>
+            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.6;">Yes. All treatment options, clinical recommendations, and costs are discussed thoroughly before we begin any procedures.</p>
+          </div>
+          <div>
+            <h4 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 0.5rem;">Can I ask questions?</h4>
+            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.6;">Absolutely. We encourage patients to discuss their doubts, dental anxiety triggers, or procedural questions with our team.</p>
+          </div>
+          <div>
+            <h4 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 0.5rem;">Can children visit for preventive check-ups?</h4>
+            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.6;">Yes. Regular check-ups from early childhood help prevent cavities and build positive associations with clinical visits.</p>
+          </div>
+          <div>
+            <h4 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 0.5rem;">Do I need treatment immediately?</h4>
+            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.6;">Not always. Dental procedures depend entirely on active diagnosis. Many visits are purely preventive or consultative.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17. Patient Reviews Section -->
+    <section class="section-gap bg-light" aria-label="Patient Testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">VERIFIED REVIEWS</span>
+          <h2>Feedback From Families</h2>
+          <p class="text-muted">SmileWave maintains a 4.9 out of 5 stars rating based on over 80 patient reviews.</p>
         </div>
         
-        <div class="appointment-form-container reveal">
-          <div class="form-message error" id="formError"></div>
-          <div class="form-message success" id="formSuccess"></div>
-
-          <form id="appointmentForm" novalidate>
-            <div class="form-grid">
-              <!-- Full Name -->
-              <div class="form-group">
-                <label for="fullName">Full Name *</label>
-                <input type="text" id="fullName" name="fullName" class="input-field" placeholder="Enter your full name" required>
-              </div>
-              
-              <!-- Phone -->
-              <div class="form-group">
-                <label for="phone">Phone Number (Indian Format) *</label>
-                <input type="tel" id="phone" name="phone" class="input-field" placeholder="e.g. 9876543210" required>
-              </div>
-              
-              <!-- Email -->
-              <div class="form-group">
-                <label for="email">Email Address (Optional)</label>
-                <input type="email" id="email" name="email" class="input-field" placeholder="e.g. name@example.com">
-              </div>
-
-              <!-- Patient Type -->
-              <div class="form-group">
-                <label for="patientType">Patient Category *</label>
-                <select id="patientType" name="patientType" class="input-field" required>
-                  <option value="" disabled selected>Select category</option>
-                  <option value="Child">Child (under 12 years)</option>
-                  <option value="Teen">Teenager</option>
-                  <option value="Adult">Adult / Senior</option>
-                </select>
-              </div>
-
-              <!-- Service -->
-              <div class="form-group">
-                <label for="service">Select Service *</label>
-                <select id="service" name="service" class="input-field" required>
-                  <option value="" disabled selected>Choose a dental service</option>
-                  <option value="Pediatric Dentistry">Pediatric Dentistry</option>
-                  <option value="Preventive Care">Preventive Dentistry</option>
-                  <option value="Root Canal Treatment">Root Canal Treatment</option>
-                  <option value="Restorative Dentistry">Restorative Dentistry</option>
-                  <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
-                  <option value="Dental Implants">Dental Implants</option>
-                </select>
-              </div>
-
-              <!-- Date -->
-              <div class="form-group">
-                <label for="prefDate">Preferred Appointment Date *</label>
-                <input type="date" id="prefDate" name="prefDate" class="input-field" required>
-              </div>
-
-              <!-- Time -->
-              <div class="form-group">
-                <label for="prefTime">Preferred Time Slot *</label>
-                <select id="prefTime" name="prefTime" class="input-field" required>
-                  <option value="" disabled selected>Choose a slot</option>
-                  <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM - 1:00 PM)</option>
-                  <option value="Afternoon (1:00 PM - 5:00 PM)">Afternoon (1:00 PM - 5:00 PM)</option>
-                  <option value="Evening (5:00 PM - 9:30 PM)">Evening (5:00 PM - 9:30 PM)</option>
-                </select>
-              </div>
-
-              <!-- Message -->
-              <div class="form-group form-group-full">
-                <label for="message">Your Message / Symptoms (Optional)</label>
-                <textarea id="message" name="message" class="input-field" placeholder="Tell us about any specific pain, teeth problems, or age details..."></textarea>
+        <div class="testimonial-container reveal">
+          <div class="testimonial-track">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars" aria-label="5 star rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <p class="testimonial-text">"Dr. Raviraj Dhumal is an excellent pediatric dentist. He explained everything patiently to my child. The ceiling screens kept him relaxed during cleaning. highly recommended!"</p>
+                <div class="testimonial-author">Verified Patient Review</div>
+                <div class="testimonial-source">Google Business Reviews</div>
               </div>
             </div>
-
-            <!-- Consent -->
-            <label class="consent-checkbox" for="consent">
-              <input type="checkbox" id="consent" name="consent" required>
-              <span class="consent-text">
-                I hereby consent to SmileWave Dental Clinic contacting me on my provided phone number and email to discuss and coordinate my appointment details. *
-              </span>
-            </label>
-
-            <!-- Submit -->
-            <div style="text-align: center;">
-              <button type="submit" class="btn btn-primary" style="min-width: 250px;">Request Appointment</button>
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars" aria-label="5 star rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <p class="testimonial-text">"Very professional clinic in Borivali West. Clean treatment environment, soft-spoken staff, and reasonable planning. Best dentist consultation experience I have had."</p>
+                <div class="testimonial-author">Verified Patient Review</div>
+                <div class="testimonial-source">Google Business Reviews</div>
+              </div>
             </div>
-          </form>
+          </div>
+          <div class="testimonial-nav">
+            <button class="testimonial-nav-btn" id="prevBtn" aria-label="Previous Testimonial">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="testimonial-nav-btn" id="nextBtn" aria-label="Next Testimonial">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- 18. FAQ Section (Expanded Accordions) -->
+    <section class="section-gap container" id="faq" aria-label="Frequently Asked Questions">
+      <div class="section-header reveal">
+        <span class="eyebrow">COMMON QUESTIONS</span>
+        <h2>Frequently Asked Questions</h2>
+        <p class="text-muted">Find quick answers to common questions about clinic timings, child visits, and treatment procedures.</p>
+      </div>
+
+      <div class="faq-accordion reveal">
+        <!-- Category: General -->
+        <h3 style="font-size: 1.25rem; color: var(--primary-dark); margin-top: 1.5rem; border-bottom: 2px solid var(--secondary-light); padding-bottom: 0.5rem;">General Questions</h3>
+        
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq1">
+            <span>Where is SmileWave Dental Clinic located?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-content" id="faq1">
+            <div class="faq-content-inner">
+              SmileWave is located at Shop No. 5, Atmaram CHS, Kalpana Chawla Marg, Devki Nagar, Borivali West, Mumbai – 400103. Landmarks include Behind Shanti Ashram Bus Depot, near I.C. Colony Cross Road No. 4.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq2">
+            <span>What are the clinic timings?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-content" id="faq2">
+            <div class="faq-content-inner">
+              We are open Monday through Sunday, from 10:00 AM to 9:30 PM.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq3">
+            <span>Do you treat adult patients?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-content" id="faq3">
+            <div class="faq-content-inner">
+              Yes. We are a Multi-Speciality clinic providing family dentistry, root canal treatments, teeth restorations, dental implants, and cosmetic care for adults and seniors.
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Children -->
+        <h3 style="font-size: 1.25rem; color: var(--primary-dark); margin-top: 2rem; border-bottom: 2px solid var(--secondary-light); padding-bottom: 0.5rem;">Children's Dentistry</h3>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq4">
+            <span>When should my child first visit the dentist?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-content" id="faq4">
+            <div class="faq-content-inner">
+              The first dental check-up is recommended when their first milk tooth erupts or by their first birthday to check development and prevent early decay.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq5">
+            <span>How often should children visit for check-ups?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-content" id="faq5">
+            <div class="faq-content-inner">
+              We generally recommend a check-up every 6 months to monitor jaw growth and apply cavity preventive sealants as their adult molars appear.
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Treatment -->
+        <h3 style="font-size: 1.25rem; color: var(--primary-dark); margin-top: 2rem; border-bottom: 2px solid var(--secondary-light); padding-bottom: 0.5rem;">Treatments &amp; Technology</h3>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq6">
+            <span>Do you provide root canal treatments (RCT)?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-content" id="faq6">
+            <div class="faq-content-inner">
+              Yes. We perform comfort-focused root canal therapies to save infected teeth and seal them using composite fillings or custom crowns.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq7">
+            <span>Do you provide dental implants?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-content" id="faq7">
+            <div class="faq-content-inner">
+              Yes. Implants are available after a complete clinical check of your bone structure and overall health to ensure stable tooth replacement.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 19. Location + Trust Section -->
+    <section class="section-gap bg-light" id="location" aria-label="Clinic Location">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-info-wrapper reveal">
+            <span class="eyebrow">OUR CLINIC LOCATION</span>
+            <h2>Your Neighborhood Dental Clinic in Borivali West</h2>
+            
+            <div class="location-card">
+              <div class="location-detail">
+                <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <div class="location-detail-title">Address &amp; Landmark</div>
+                  <div class="location-detail-text">
+                    Shop No. 5, Atmaram CHS, Kalpana Chawla Marg, Devki Nagar, Borivali West, Mumbai – 400103<br>
+                    <strong>Landmark:</strong> Behind Shanti Ashram Bus Depot, near I.C. Colony Cross Road No. 4
+                  </div>
+                </div>
+              </div>
+              
+              <div class="location-detail">
+                <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                  <div class="location-detail-title">Phone Number</div>
+                  <div class="location-detail-text">
+                    <a href="tel:+919769311848" style="color: var(--primary); font-weight: 700;">+91 97693 11848</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="location-detail">
+                <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                  <div class="location-detail-title">Timings</div>
+                  <div class="location-detail-text">Monday – Sunday: 10:00 AM – 9:30 PM</div>
+                </div>
+              </div>
+
+              <div class="location-ctas">
+                <a href="tel:+919769311848" class="btn btn-primary">Call Clinic</a>
+                <a href="https://maps.app.goo.gl/yJbF15Z2E2f248520e" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Get Directions</a>
+              </div>
+            </div>
+          </div>
+          <div class="map-container reveal">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1422736467385!2d72.84365777598685!3d19.239276946973804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0d7967b5eb7%3A0x6a05e26b1b87cbf0!2sKalpana+Chawla+Marg%2C+Devki+Nagar%2C+Borivali+West%2C+Mumbai%2C+Maharashtra+400103!5e0!3m2!1sen!2sin!4v1713456789012!5m2!1sen!2sin" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="Google Map location of SmileWave Dental Clinic in Borivali West">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 20. Appointment CTA Section -->
+    <section class="section-gap container" id="appointment" aria-label="Appointment Booking">
+      <div class="section-header reveal">
+        <span class="eyebrow">ONLINE ENQUIRY</span>
+        <h2>Request an Appointment</h2>
+        <p class="text-muted">Fill out the form below, and our clinic desk will contact you to confirm a convenient slot.</p>
+      </div>
+      
+      <div class="appointment-form-container reveal">
+        <div class="form-message error" id="formError"></div>
+        <div class="form-message success" id="formSuccess"></div>
+
+        <form id="appointmentForm" novalidate>
+          <div class="form-grid">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" class="input-field" placeholder="Enter your name" required>
+            </div>
+            
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="phone">Phone Number (Indian Format) *</label>
+              <input type="tel" id="phone" name="phone" class="input-field" placeholder="e.g. 9876543210" required>
+            </div>
+            
+            <!-- Patient Type -->
+            <div class="form-group">
+              <label for="patientType">Patient Category *</label>
+              <select id="patientType" name="patientType" class="input-field" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="Child">Child (under 12 years)</option>
+                <option value="Teen">Teenager</option>
+                <option value="Adult">Adult / Senior</option>
+              </select>
+            </div>
+
+            <!-- Service -->
+            <div class="form-group">
+              <label for="service">Select Service or Concern *</label>
+              <select id="service" name="service" class="input-field" required>
+                <option value="" disabled selected>Choose service/concern</option>
+                <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                <option value="Preventive Care">Preventive Dentistry</option>
+                <option value="Root Canal Treatment">Root Canal Treatment</option>
+                <option value="Restorative Dentistry">Restorative Dentistry</option>
+                <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                <option value="Dental Implants">Dental Implants</option>
+              </select>
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+              <label for="prefDate">Preferred Appointment Date *</label>
+              <input type="date" id="prefDate" name="prefDate" class="input-field" required>
+            </div>
+
+            <!-- Time -->
+            <div class="form-group">
+              <label for="prefTime">Preferred Time Slot *</label>
+              <select id="prefTime" name="prefTime" class="input-field" required>
+                <option value="" disabled selected>Choose a slot</option>
+                <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM - 1:00 PM)</option>
+                <option value="Afternoon (1:00 PM - 5:00 PM)">Afternoon (1:00 PM - 5:00 PM)</option>
+                <option value="Evening (5:00 PM - 9:30 PM)">Evening (5:00 PM - 9:30 PM)</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group form-group-full">
+              <label for="message">Message (Optional)</label>
+              <textarea id="message" name="message" class="input-field" placeholder="Tell us about any specific pain or age details..."></textarea>
+            </div>
+          </div>
+
+          <!-- Consent -->
+          <label class="consent-checkbox" for="consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <span class="consent-text">
+              I hereby consent to SmileWave Dental Clinic contacting me on my provided phone number to discuss and coordinate my appointment details. *
+            </span>
+          </label>
+
+          <!-- Submit -->
+          <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary" style="min-width: 250px;">Request Appointment</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- 21. Footer & Medical Disclaimer -->
   <footer>
     <div class="container footer-grid">
       <div class="footer-col">
         <a href="./index.html" class="footer-logo" aria-label="SmileWave Homepage">
-          <img src="./images/logo.svg" alt="SmileWave Logo">
+          <img src="./images/logo.png" alt="SmileWave Logo">
         </a>
         <p class="footer-desc">
           Gentle Care. Healthy Smiles. Happier Families. SmileWave provides comprehensive, pediatric-focused, and family dental care in a warm and comforting environment.
@@ -865,8 +1137,8 @@
           <li><a href="./services.html#preventive">Preventive Care</a></li>
           <li><a href="./root-canal-treatment.html">Root Canal Treatment</a></li>
           <li><a href="./restorative-dentistry.html">Restorative Dentistry</a></li>
-          <li><a href="./cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
           <li><a href="./dental-implants.html">Dental Implants</a></li>
+          <li><a href="./cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -889,23 +1161,41 @@
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <div class="container footer-bottom-flex">
-        <p>© 2026 SmileWave™ Pediatric &amp; Multi-Speciality Dental Clinic. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="./privacy-policy.html">Privacy Policy</a>
-          <a href="./terms.html">Terms &amp; Disclaimers</a>
+      <div class="container footer-bottom-flex" style="flex-direction: column; align-items: stretch; gap: 1.5rem;">
+        <div class="medical-disclaimer">
+          <strong>Medical Disclaimer:</strong> The information provided on this website is for general educational and informational purposes only. It is not intended as medical or dental advice and should not be used as a substitute for professional clinical evaluation, diagnosis, or treatment. Always seek the advice of a qualified dentist or medical doctor regarding any dental condition or treatment options.
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1rem;">
+          <p>© 2026 SmileWave™ Pediatric &amp; Multi-Speciality Dental Clinic. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms &amp; Disclaimers</a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- 22. Floating Desktop CTA -->
+  <div class="floating-desktop-cta" aria-label="Quick Actions">
+    <a href="tel:+919769311848" class="floating-cta-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Call Clinic</span>
+    </a>
+    <a href="#appointment" class="floating-cta-item primary">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Book Appointment</span>
+    </a>
+  </div>
 
   <!-- Back to Top -->
   <button class="back-to-top" aria-label="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <!-- Mobile Sticky Footer CTA -->
+  <!-- 22. Mobile Sticky Footer CTA -->
   <div class="mobile-sticky-cta">
     <a href="tel:+919769311848" class="mobile-cta-btn">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -917,7 +1207,7 @@
       </svg>
       <span>WhatsApp</span>
     </a>
-    <a href="./contact.html#appointment" class="mobile-cta-btn highlight">
+    <a href="#appointment" class="mobile-cta-btn highlight">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       <span>Book Now</span>
     </a>

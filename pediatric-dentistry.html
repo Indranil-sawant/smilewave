@@ -31,14 +31,14 @@
   <!-- Top Announcement Bar -->
   <div class="announcement-bar">
     Gentle, Family-Friendly Dental Care in Borivali West | 
-    <a href="./contact.html#appointment">Book an Appointment →</a>
+    <a href="./index.html#appointment">Book an Appointment →</a>
   </div>
 
   <!-- Header -->
   <header>
     <div class="container navbar">
       <a href="./index.html" class="logo" aria-label="SmileWave Dental Clinic Homepage">
-        <img src="./images/logo.svg" alt="SmileWave Logo">
+        <img src="./images/logo.png" alt="SmileWave Logo">
       </a>
       
       <!-- Hamburger Toggle -->
@@ -51,22 +51,36 @@
       </button>
 
       <!-- Navigation Links -->
-      <nav role="navigation">
+            <nav role="navigation">
         <ul class="nav-links">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="./services.html" class="active">Services</a></li>
+          <li class="has-dropdown">
+            <a href="./services.html" class="active">
+              Services
+              <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./pediatric-dentistry.html">Pediatric Dentistry</a></li>
+              <li><a href="./services.html#preventive">Preventive Dentistry</a></li>
+              <li><a href="./root-canal-treatment.html">Root Canal Treatment</a></li>
+              <li><a href="./restorative-dentistry.html">Restorative Dentistry</a></li>
+              <li><a href="./dental-implants.html">Dental Implants</a></li>
+              <li><a href="./cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+            </ul>
+          </li>
           <li><a href="./index.html#why-smilewave">Why SmileWave</a></li>
+          <li><a href="./index.html#first-visit">Patient Guide</a></li>
           <li><a href="./faq.html">FAQs</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <li class="mobile-only-menu-cta"><a href="./contact.html#appointment" class="btn btn-primary">Book Appointment</a></li>
+          <li class="mobile-only-menu-cta"><a href="./index.html#appointment" class="btn btn-primary">Book Appointment</a></li>
           <li class="mobile-only-menu-cta"><a href="tel:+919769311848" class="btn btn-secondary">Call Clinic</a></li>
         </ul>
       </nav>
 
       <!-- CTA -->
-      <div class="nav-cta">
-        <a href="./contact.html#appointment" class="btn btn-primary">Book Appointment</a>
+            <div class="nav-cta">
+        <a href="./index.html#appointment" class="btn btn-primary">Book Appointment</a>
       </div>
     </div>
   </header>
@@ -189,7 +203,7 @@
             <h3 style="color: var(--primary-dark);">Schedule Your Child's Appointment Today</h3>
             <p class="text-muted">A comfortable, gentle visit that sets a foundation for a healthy smile.</p>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
-              <a href="./contact.html#appointment" class="btn btn-primary">Book Appointment</a>
+              <a href="./index.html#appointment" class="btn btn-primary">Book Appointment</a>
               <a href="tel:+919769311848" class="btn btn-secondary" style="background: var(--surface);">Call Clinic</a>
             </div>
           </div>
@@ -216,11 +230,11 @@
   </main>
 
   <!-- Footer -->
-  <footer>
+    <footer>
     <div class="container footer-grid">
       <div class="footer-col">
         <a href="./index.html" class="footer-logo" aria-label="SmileWave Homepage">
-          <img src="./images/logo.svg" alt="SmileWave Logo">
+          <img src="./images/logo.png" alt="SmileWave Logo">
         </a>
         <p class="footer-desc">
           Gentle Care. Healthy Smiles. Happier Families. SmileWave provides comprehensive, pediatric-focused, and family dental care in a warm and comforting environment.
@@ -243,8 +257,8 @@
           <li><a href="./services.html#preventive">Preventive Care</a></li>
           <li><a href="./root-canal-treatment.html">Root Canal Treatment</a></li>
           <li><a href="./restorative-dentistry.html">Restorative Dentistry</a></li>
-          <li><a href="./cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
           <li><a href="./dental-implants.html">Dental Implants</a></li>
+          <li><a href="./cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -252,7 +266,7 @@
         <div class="footer-contact-item">
           <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <span class="footer-contact-text">
-            Shop No. 5, Atmaram CHS, Kalpana Chawla Marg, Devki Nagar, Borivali West, Mumbai – 400103
+            Shop No. 5, Atmaram CHS, Kalpana Chawla Marg, Devki Nagar, Borivali West, Mumbai â€“ 400103
           </span>
         </div>
         <div class="footer-contact-item">
@@ -262,17 +276,23 @@
         <div class="footer-contact-item">
           <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           <span class="footer-contact-text">
-            Mon – Sun: 10:00 AM – 9:30 PM
+            Mon â€“ Sun: 10:00 AM â€“ 9:30 PM
           </span>
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <div class="container footer-bottom-flex">
-        <p>© 2026 SmileWave™ Pediatric &amp; Multi-Speciality Dental Clinic. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="./privacy-policy.html">Privacy Policy</a>
-          <a href="./terms.html">Terms &amp; Disclaimers</a>
+      <div class="container footer-bottom-flex" style="flex-direction: column; align-items: stretch; gap: 1.5rem;">
+        <div class="medical-disclaimer">
+          <strong>Medical Disclaimer:</strong> The information provided on this website is for general educational and informational purposes only. It is not intended as medical or dental advice and should not be used as a substitute for professional clinical evaluation, diagnosis, or treatment. Always seek the advice of a qualified dentist or medical doctor regarding any dental condition or treatment options.
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1rem;">
+          <p>Â© 2026 SmileWaveâ„¢ Pediatric &amp; Multi-Speciality Dental Clinic. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms &amp; Disclaimers</a>
+          </div>
         </div>
       </div>
     </div>
@@ -284,7 +304,7 @@
   </button>
 
   <!-- Mobile Sticky Footer CTA -->
-  <div class="mobile-sticky-cta">
+    <div class="mobile-sticky-cta">
     <a href="tel:+919769311848" class="mobile-cta-btn">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>Call</span>
@@ -295,7 +315,7 @@
       </svg>
       <span>WhatsApp</span>
     </a>
-    <a href="./contact.html#appointment" class="mobile-sticky-cta highlight">
+    <a href="./index.html#appointment" class="mobile-cta-btn highlight">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       <span>Book Now</span>
     </a>

@@ -1,21 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
   <defs>
-    <linearGradient id="favWave" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F766E" />
-      <stop offset="100%" stop-color="#0D9488" />
+    <linearGradient id="favBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0088FF"/>
+      <stop offset="100%" stop-color="#0055C8"/>
     </linearGradient>
-    <linearGradient id="favSky" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#0EA5E9" />
+
+    <linearGradient id="favTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5D2"/>
+      <stop offset="100%" stop-color="#00A896"/>
     </linearGradient>
   </defs>
 
-  <!-- Main wave representing a tooth structure and smile -->
-  <path d="M 15 25 C 22.5 10, 27.5 10, 35 25 C 42.5 40, 47.5 40, 55 25 C 62.5 10, 65 15, 65 25 C 65 42, 55 52, 35 52 C 15 52, 5 42, 5 25 Z" fill="url(#favWave)" transform="translate(-2, 0) scale(0.9)"/>
-  
-  <!-- Secondary overlapping wave representing a smile/flow -->
-  <path d="M 12 30 C 20 18, 25 18, 33 30 C 40 42, 45 42, 53 30 C 53 38, 48 45, 33 45 C 18 45, 12 38, 12 30 Z" fill="url(#favSky)" opacity="0.85" transform="translate(-2, 0) scale(0.9)"/>
-  
-  <!-- Star/Sparkle accent -->
-  <path d="M 52 14 L 54 18 L 58 19 L 55 22 L 56 26 L 52 24 L 48 26 L 49 22 L 46 19 L 50 18 Z" fill="#FB7185" transform="translate(-2, 0) scale(0.9)"/>
+  <g transform="translate(-5, 0)">
+    <!-- Outer Wave Ring -->
+    <path d="M 15,62 C 10,35 25,12 50,10 C 72,8 88,24 85,50 C 82,75 58,95 28,92 C 18,91 10,84 15,62 Z" 
+          fill="none" stroke="url(#favTeal)" stroke-width="7" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Tooth Shape -->
+    <path d="M 32,32 
+             C 32,20 44,14 52,22 
+             C 56,26 58,26 62,22 
+             C 70,14 82,20 82,32 
+             C 82,52 74,72 68,85 
+             C 65,92 59,92 57,85 
+             C 53,72 49,72 45,85 
+             C 43,92 37,92 34,85 
+             C 28,72 32,52 32,32 Z" 
+          fill="url(#favBlue)"/>
+
+    <!-- Tooth Highlight -->
+    <path d="M 39,32 C 39,25 46,21 52,27 C 48,38 46,55 48,70 C 42,60 39,46 39,32 Z" 
+          fill="#FFFFFF" opacity="0.4"/>
+
+    <!-- Smile Wave Arc -->
+    <path d="M 18,52 C 32,80 62,94 92,72" 
+          fill="none" stroke="url(#favTeal)" stroke-width="8.5" stroke-linecap="round"/>
+
+    <!-- Sparkle Accent -->
+    <path d="M 88,26 Q 88,34 96,34 Q 88,34 88,42 Q 88,34 80,34 Q 88,34 88,26 Z" 
+          fill="url(#favTeal)"/>
+  </g>
 </svg>
