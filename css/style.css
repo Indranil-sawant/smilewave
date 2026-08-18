@@ -94,17 +94,19 @@ button, input, select, textarea {
    ========================================== */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
     color: #0F172A; /* Dark Navy Slate for headlines */
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 h1 {
-    font-size: clamp(2.375rem, 6vw, 4.5rem); /* Mobile: 38px, Desktop: 72px */
+    font-size: clamp(1.85rem, 5.5vw, 4.25rem); /* Mobile: 30px, Desktop: 68px */
 }
 
 h2 {
-    font-size: clamp(1.85rem, 4.5vw, 3rem); /* Mobile: ~30px, Desktop: 48px */
+    font-size: clamp(1.45rem, 4.2vw, 2.75rem); /* Mobile: ~23px, Desktop: 44px */
     margin-bottom: 1.25rem;
 }
 
