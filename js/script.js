@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    initHeroTaglineSlider();
     initStickyHeader();
     initMobileMenu();
     initMobileServicesAccordion();
@@ -482,4 +483,165 @@ function initConcernAccordion() {
             }
         });
     });
+}
+
+/**
+ * 10. Rotating Hero Tagline Slider with 3-Second Cycle & Progress Indicator
+ */
+function initHeroTaglineSlider() {
+    const deck = document.getElementById('hero-taglines-deck');
+    const eyebrowEl = document.getElementById('hero-rotating-eyebrow');
+    const dots = document.querySelectorAll('.hero-slider-controls .slider-dot');
+    
+    if (!deck) return;
+    const slides = deck.querySelectorAll('.hero-slide');
+    if (slides.length <= 1) return;
+
+    let currentIndex = 0;
+    const slideIntervalDuration = 3000; // 3 seconds per user request
+    let timer = null;
+    let isPaused = false;
+
+    // Helper to switch to specific slide index
+    const goToSlide = (targetIndex) => {
+        if (targetIndex === currentIndex && slides[currentIndex].classList.contains('active')) {
+            return;
+        }
+
+        slides.forEach((slide, idx) => {
+            if (idx === targetIndex) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+
+        // Update eyebrow text with quick fade
+        if (eyebrowEl && slides[targetIndex]) {
+            const nextEyebrow = slides[targetIndex].getAttribute('data-eyebrow');
+            if (nextEyebrow && eyebrowEl.textContent !== nextEyebrow) {
+                eyebrowEl.style.opacity = '0';
+                eyebrowEl.style.transform = 'translateY(-4px)';
+                setTimeout(() => {
+                    eyebrowEl.textContent = nextEyebrow;
+                    eyebrowEl.style.opacity = '1';
+                    eyebrowEl.style.transform = 'translateY(0)';
+                }, 180);
+            }
+        }
+
+        // Update indicator dots and reset animation
+        dots.forEach((dot, idx) => {
+            dot.classList.remove('active');
+            const progress = dot.querySelector('.dot-progress');
+            if (progress) {
+                progress.style.animation = 'none';
+                progress.offsetHeight; // Trigger reflow
+            }
+            if (idx === targetIndex) {
+                dot.classList.add('active');
+                if (progress && !isPaused) {
+                    progress.style.animation = 'dotProgressFill 3s linear forwards';
+                }
+            }
+        });
+
+        currentIndex = targetIndex;
+    };
+
+    const nextSlide = () => {
+        if (isPaused) return;
+        const nextIndex = (currentIndex + 1) % slides.length;
+        goToSlide(nextIndex);
+    };
+
+    const startTimer = () => {
+        stopTimer();
+        timer = setInterval(nextSlide, slideIntervalDuration);
+        // Refresh active dot progress animation
+        const activeDot = dots[currentIndex];
+        if (activeDot) {
+            const progress = activeDot.querySelector('.dot-progress');
+            if (progress) {
+                progress.style.animation = 'none';
+                progress.offsetHeight; // trigger reflow
+                progress.style.animation = 'dotProgressFill 3s linear forwards';
+            }
+        }
+    };
+
+    const stopTimer = () => {
+        if (timer) {
+            clearInterval(timer);
+            timer = null;
+        }
+    };
+
+    // Dot click listeners
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+            startTimer(); // Restart 3s cycle from this point
+        });
+    });
+
+    // Pause on hover or focus of hero content
+    const heroContent = document.querySelector('.hero-content');
+    if (heroContent) {
+        heroContent.addEventListener('mouseenter', () => {
+            isPaused = true;
+            stopTimer();
+        });
+
+        heroContent.addEventListener('mouseleave', () => {
+            isPaused = false;
+            startTimer();
+        });
+
+        heroContent.addEventListener('focusin', () => {
+            isPaused = true;
+            stopTimer();
+        });
+
+        heroContent.addEventListener('focusout', () => {
+            isPaused = false;
+            startTimer();
+        });
+    }
+
+    // Interactive Mascot click reaction
+    const mascot = document.querySelector('.kids-tooth-mascot');
+    if (mascot) {
+        mascot.addEventListener('click', () => {
+            mascot.style.transform = 'scale(1.25) rotate(15deg)';
+            setTimeout(() => {
+                mascot.style.transform = '';
+            }, 400);
+            nextSlide();
+            startTimer();
+        });
+    }
+
+    // Keyboard support for dots (Left / Right arrow navigation)
+    const controls = document.querySelector('.hero-slider-controls');
+    if (controls) {
+        controls.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                e.preventDefault();
+                const next = (currentIndex + 1) % slides.length;
+                goToSlide(next);
+                startTimer();
+                dots[next]?.focus();
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                const prev = (currentIndex - 1 + slides.length) % slides.length;
+                goToSlide(prev);
+                startTimer();
+                dots[prev]?.focus();
+            }
+        });
+    }
+
+    // Start cycle
+    startTimer();
 }

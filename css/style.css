@@ -355,13 +355,13 @@ header.sticky-scrolled .logo img {
    ========================================== */
 .hero {
     position: relative;
-    padding: 6rem 0;
+    padding: 5.5rem 0 6rem 0;
     overflow: hidden;
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1.15fr 0.85fr;
     gap: 4rem;
     align-items: center;
 }
@@ -369,7 +369,264 @@ header.sticky-scrolled .logo img {
 .hero-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
+}
+
+/* --- Cute Kids Tooth Mascot & Badge --- */
+.hero-mascot-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.4rem 1.2rem 0.4rem 0.5rem;
+    background: linear-gradient(135deg, rgba(240, 249, 255, 0.9) 0%, rgba(224, 247, 250, 0.8) 100%);
+    border: 1.5px solid rgba(41, 197, 230, 0.35);
+    border-radius: var(--radius-full);
+    width: fit-content;
+    box-shadow: 0 6px 20px rgba(0, 114, 206, 0.08);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-mascot-badge:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 114, 206, 0.5);
+    box-shadow: 0 8px 24px rgba(0, 114, 206, 0.12);
+}
+
+.kids-tooth-mascot {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    animation: mascotFloat 3.6s ease-in-out infinite;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.kids-tooth-mascot:hover {
+    transform: scale(1.15) rotate(6deg);
+}
+
+.tooth-mascot-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+/* Mascot SVG Keyframe Animations */
+@keyframes mascotFloat {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-6px) rotate(2.5deg);
+    }
+}
+
+@keyframes sparkleTwinkle {
+    0%, 100% {
+        transform: scale(0.6) rotate(0deg);
+        opacity: 0.35;
+    }
+    50% {
+        transform: scale(1.3) rotate(45deg);
+        opacity: 1;
+        filter: drop-shadow(0 0 6px rgba(0, 229, 210, 0.8));
+    }
+}
+
+@keyframes eyeBlink {
+    0%, 90%, 100% {
+        transform: scaleY(1);
+    }
+    95% {
+        transform: scaleY(0.1);
+    }
+}
+
+@keyframes handWave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(14deg) translateY(-2px);
+    }
+}
+
+.mascot-eyes {
+    transform-origin: 58px 46px;
+    animation: eyeBlink 4.2s infinite ease-in-out;
+}
+
+.mascot-hand {
+    transform-origin: 85px 50px;
+    animation: handWave 2.4s ease-in-out infinite;
+}
+
+.sparkle-1 {
+    transform-origin: 16px 36px;
+    animation: sparkleTwinkle 2.2s infinite ease-in-out;
+}
+
+.sparkle-2 {
+    transform-origin: 104px 28px;
+    animation: sparkleTwinkle 2.6s infinite ease-in-out 0.6s;
+}
+
+.sparkle-3 {
+    transform-origin: 20px 85px;
+    animation: sparkleTwinkle 2s infinite ease-in-out 1.2s;
+}
+
+.sparkle-4 {
+    transform-origin: 106px 76px;
+    animation: sparkleTwinkle 2.5s infinite ease-in-out 1.7s;
+}
+
+.mascot-tag-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.1rem;
+}
+
+.hero-eyebrow-rotating {
+    margin-bottom: 0;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: var(--primary);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mascot-subtag {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--secondary-dark);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* --- Rotating Hero Tagline Deck --- */
+.hero-taglines-wrapper {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(22px);
+    filter: blur(6px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.6s ease;
+}
+
+.hero-slide.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    filter: blur(0);
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4.8vw, 3.75rem);
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    color: #0F172A;
+    margin-bottom: 1rem;
+}
+
+.highlight-wave {
+    background: linear-gradient(135deg, #0072CE 0%, #00A6CE 60%, #00B4D8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    position: relative;
+}
+
+.hero-desc {
+    font-size: clamp(1rem, 1.6vw, 1.125rem);
+    line-height: 1.65;
+    color: var(--text-muted);
+    max-width: 540px;
+    margin: 0;
+}
+
+/* --- Slide Navigation & 3-Second Progress Indicators --- */
+.hero-slider-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-top: 0.35rem;
+}
+
+.slider-dot {
+    height: 7px;
+    width: 24px;
+    border-radius: var(--radius-full);
+    background: rgba(0, 114, 206, 0.15);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), background 0.35s ease;
+}
+
+.slider-dot:hover {
+    background: rgba(0, 114, 206, 0.28);
+}
+
+.slider-dot.active {
+    width: 46px;
+    background: rgba(0, 114, 206, 0.2);
+}
+
+.slider-dot .dot-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #0072CE, #00E5D2);
+    border-radius: var(--radius-full);
+}
+
+.slider-dot.active .dot-progress {
+    animation: dotProgressFill 3s linear forwards;
+}
+
+@keyframes dotProgressFill {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Pause animation on hover or focus for user comfort */
+.hero-content:hover .slider-dot.active .dot-progress,
+.hero-content:focus-within .slider-dot.active .dot-progress {
+    animation-play-state: paused;
 }
 
 .hero-cta {
