@@ -71,10 +71,15 @@ function initMobileMenu() {
 
     menuToggle.addEventListener('click', toggleMenu);
 
-    // Close menu when clicking navigation links
+    // Close menu when clicking navigation links (except the services accordion toggle on mobile)
     const links = navLinks.querySelectorAll('a');
     links.forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            const isDropdownToggle = link.closest('.has-dropdown') && link === link.closest('.has-dropdown').querySelector(':scope > a');
+            if (isDropdownToggle && window.innerWidth <= 768) {
+                // Let the accordion click handler manage toggling the submenu
+                return;
+            }
             if (navLinks.classList.contains('active')) {
                 toggleMenu();
             }
@@ -360,7 +365,10 @@ function initAppointmentForm() {
         // Show result feedback
         if (isValid) {
             // Hide error feedback banner
-            if (errorMsg) errorMsg.style.display = 'none';
+            if (errorMsg) {
+                errorMsg.textContent = '';
+                errorMsg.style.display = 'none';
+            }
 
             // Gather data for extension/analytics hook
             const formData = {
@@ -376,8 +384,8 @@ function initAppointmentForm() {
             };
 
             if (successMsg) {
-                successMsg.textContent = 'Thank you. Opening WhatsApp so the clinic can confirm your slot.';
-                successMsg.style.display = 'block';
+                successMsg.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> <span>Thank you. Opening WhatsApp so our clinic desk can confirm your slot.</span>';
+                successMsg.style.display = 'flex';
                 successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
 
@@ -400,11 +408,14 @@ function initAppointmentForm() {
             form.reset();
         } else {
             if (errorMsg) {
-                errorMsg.textContent = 'Please check the form for errors and try again.';
-                errorMsg.style.display = 'block';
+                errorMsg.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> <span>Please check the highlighted fields and try again.</span>';
+                errorMsg.style.display = 'flex';
                 errorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
-            if (successMsg) successMsg.style.display = 'none';
+            if (successMsg) {
+                successMsg.textContent = '';
+                successMsg.style.display = 'none';
+            }
         }
     });
 
@@ -444,16 +455,22 @@ function initBackToTop() {
  * 8. Mobile Dropdown Navigation Services Accordion
  */
 function initMobileServicesAccordion() {
-    const dropdownToggle = document.querySelector('.nav-links li.has-dropdown > a');
-    const dropdownLi = document.querySelector('.nav-links li.has-dropdown');
-    
-    if (!dropdownToggle || !dropdownLi) return;
+    const dropdownToggles = document.querySelectorAll('.nav-links li.has-dropdown > a');
+    if (dropdownToggles.length === 0) return;
 
-    dropdownToggle.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            dropdownLi.classList.toggle('active');
-        }
+    dropdownToggles.forEach(toggle => {
+        const dropdownLi = toggle.closest('li.has-dropdown');
+        if (!dropdownLi) return;
+
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdownLi.classList.toggle('active');
+                const isExpanded = dropdownLi.classList.contains('active');
+                toggle.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+            }
+        });
     });
 }
 
