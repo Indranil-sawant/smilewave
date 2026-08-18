@@ -41,6 +41,12 @@ function initMobileMenu() {
     
     if (!menuToggle || !navLinks) return;
 
+    const getFocusableElements = () => {
+        return [menuToggle, ...navLinks.querySelectorAll('a, button, [tabindex="0"]')].filter(el => {
+            return !el.hasAttribute('disabled') && el.getAttribute('aria-hidden') !== 'true';
+        });
+    };
+
     const toggleMenu = () => {
         const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
         menuToggle.setAttribute('aria-expanded', !isExpanded);
@@ -48,6 +54,16 @@ function initMobileMenu() {
         
         // Toggle body scroll to prevent background scrolling when menu is open
         document.body.style.overflow = isExpanded ? '' : 'hidden';
+
+        if (!isExpanded) {
+            // When opening, focus the first item inside nav links (or toggle button)
+            const focusables = getFocusableElements();
+            if (focusables.length > 1) {
+                focusables[1].focus(); // Focus the first nav link
+            }
+        } else {
+            menuToggle.focus();
+        }
     };
 
     menuToggle.addEventListener('click', toggleMenu);
@@ -62,10 +78,44 @@ function initMobileMenu() {
         });
     });
 
-    // Close menu when pressing Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+    // Close menu when clicking outside the menu container
+    document.addEventListener('click', (e) => {
+        const isOpen = navLinks.classList.contains('active');
+        if (isOpen && !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
             toggleMenu();
+        }
+    });
+
+    // Handle accessibility keyboard navigation inside mobile drawer
+    document.addEventListener('keydown', (e) => {
+        const isOpen = navLinks.classList.contains('active');
+        if (!isOpen) return;
+
+        if (e.key === 'Escape') {
+            toggleMenu();
+            return;
+        }
+
+        if (e.key === 'Tab') {
+            const focusables = getFocusableElements();
+            if (focusables.length === 0) return;
+
+            const firstEl = focusables[0];
+            const lastEl = focusables[focusables.length - 1];
+
+            if (e.shiftKey) {
+                // Shift + Tab -> loop backwards
+                if (document.activeElement === firstEl) {
+                    lastEl.focus();
+                    e.preventDefault();
+                }
+            } else {
+                // Tab -> loop forwards
+                if (document.activeElement === lastEl) {
+                    firstEl.focus();
+                    e.preventDefault();
+                }
+            }
         }
     });
 }

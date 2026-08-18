@@ -93,32 +93,34 @@ button, input, select, textarea {
    3. TYPOGRAPHY
    ========================================== */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    color: var(--primary-dark);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #0F172A; /* Dark Navy Slate for headlines */
 }
 
 h1 {
-    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-size: clamp(2.375rem, 6vw, 4.5rem); /* Mobile: 38px, Desktop: 72px */
 }
 
 h2 {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    margin-bottom: 1rem;
+    font-size: clamp(1.85rem, 4.5vw, 3rem); /* Mobile: ~30px, Desktop: 48px */
+    margin-bottom: 1.25rem;
 }
 
 h3 {
-    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    font-size: clamp(1.4rem, 3.2vw, 2rem);
 }
 
 .eyebrow {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 700;
-    font-size: 0.875rem;
+    font-weight: 800;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--secondary-dark);
+    letter-spacing: 0.15em;
+    color: var(--primary); /* Sky Blue / Royal Blue primary highlight */
+    display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
 .text-muted {
@@ -138,8 +140,8 @@ h3 {
 }
 
 .section-gap {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: clamp(3.5rem, 8vw, 7.5rem); /* Mobile: 56px, Tablet: 96px, Desktop: 120px */
+    padding-bottom: clamp(3.5rem, 8vw, 7.5rem);
 }
 
 .bg-light {
@@ -147,7 +149,7 @@ h3 {
 }
 
 .bg-teal-tint {
-    background-color: var(--primary-light);
+    background-color: var(--secondary-light); /* Soft light tint background */
 }
 
 .flex-center {
@@ -159,13 +161,13 @@ h3 {
 .grid-cols-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .grid-cols-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 /* ==========================================
@@ -176,35 +178,37 @@ h3 {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.875rem 1.75rem;
-    border-radius: var(--radius-xl);
+    padding: 0.875rem 2rem;
+    min-height: 3rem; /* 48px touch height target */
+    border-radius: var(--radius-full);
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
     font-size: 0.95rem;
     cursor: pointer;
     transition: var(--transition);
+    border: 2px solid transparent;
 }
 
 .btn-primary {
     background-color: var(--primary);
     color: var(--surface);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 14px rgba(0, 114, 206, 0.25);
 }
 
 .btn-primary:hover {
     background-color: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 6px 20px rgba(0, 114, 206, 0.35);
 }
 
 .btn-secondary {
-    background-color: var(--surface);
+    background-color: transparent;
     border: 2px solid var(--primary);
     color: var(--primary);
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-light);
+    background-color: var(--secondary-light);
     transform: translateY(-2px);
 }
 
@@ -215,19 +219,20 @@ h3 {
 }
 
 .btn-white:hover {
-    background-color: var(--primary-light);
+    background-color: var(--secondary-light);
     transform: translateY(-2px);
 }
 
 .btn-accent {
     background-color: var(--accent);
     color: var(--surface);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 12px rgba(251, 113, 133, 0.25);
 }
 
 .btn-accent:hover {
     background-color: var(--accent-dark);
     transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(251, 113, 133, 0.35);
 }
 
 .hover-lift {
@@ -1062,11 +1067,12 @@ label {
 
 .input-field {
     width: 100%;
-    padding: 0.875rem 1rem;
+    padding: 1rem 1.25rem;
+    min-height: 3.5rem; /* ~56px premium input height */
     border-radius: var(--radius-xl);
     border: 1px solid var(--border);
     background-color: var(--background);
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: var(--transition);
 }
 
@@ -1509,4 +1515,138 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+/* ==========================================
+   23. V2 PREMIUM ASYMMETRICAL LAYOUT HELPERS
+   ========================================== */
+.asymmetric-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.asymmetric-reversed {
+    grid-template-columns: 0.85fr 1.15fr;
+}
+
+.overlap-composition {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.overlap-img-main {
+    width: 85%;
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+    display: block;
+}
+
+.overlap-card-floating {
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-xl);
+    max-width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.overlap-card-floating-left {
+    left: 0;
+    right: auto;
+}
+
+.trust-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--secondary-light);
+    color: var(--primary-dark);
+    padding: 0.35rem 0.875rem;
+    border-radius: var(--radius-full);
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.visual-quote {
+    border-left: 4px solid var(--primary);
+    padding-left: 2rem;
+    margin: 2.5rem 0;
+}
+
+.visual-quote blockquote {
+    font-size: clamp(1.2rem, 3.5vw, 1.85rem);
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1A202C;
+    font-style: italic;
+}
+
+/* Horizontal Scrollable Trust Strip (Mobile-first) */
+.trust-strip-container {
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar for clean visual appearance */
+    -ms-overflow-style: none;
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+    margin: 0 -1.5rem; /* Break container padding on mobile */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.trust-strip-container::-webkit-scrollbar {
+    display: none;
+}
+
+.trust-strip-item {
+    flex-shrink: 0;
+    width: 250px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.trust-strip-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background-color: var(--secondary-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile full-screen navigation overlay custom rules */
+.nav-links-mobile-open {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-only-menu-cta {
+    display: none;
+    width: 100%;
+    text-align: center;
 }
