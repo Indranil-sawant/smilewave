@@ -185,8 +185,8 @@ function initFAQAccordion() {
 function initTestimonialSlider() {
     const track = document.querySelector('.testimonial-track');
     const slides = document.querySelectorAll('.testimonial-slide');
-    const prevBtn = document.querySelector('.testimonial-nav-btn.prev');
-    const nextBtn = document.querySelector('.testimonial-nav-btn.next');
+    const prevBtn = document.getElementById('prevBtn') || document.querySelector('.testimonial-nav-btn.prev');
+    const nextBtn = document.getElementById('nextBtn') || document.querySelector('.testimonial-nav-btn.next');
 
     if (!track || slides.length === 0) return;
 
@@ -206,24 +206,49 @@ function initTestimonialSlider() {
     };
 
     if (prevBtn) {
-        prevBtn.addEventListener('click', () => updateSlider(currentIndex - 1));
+        prevBtn.addEventListener('click', () => {
+            updateSlider(currentIndex - 1);
+            resetAutoplay();
+        });
     }
 
     if (nextBtn) {
-        nextBtn.addEventListener('click', () => updateSlider(currentIndex + 1));
+        nextBtn.addEventListener('click', () => {
+            updateSlider(currentIndex + 1);
+            resetAutoplay();
+        });
     }
 
-    // Optional autoplay
+    // Touch swipe gesture support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diffX = touchStartX - touchEndX;
+        if (Math.abs(diffX) > 40) {
+            if (diffX > 0) {
+                // Swiped Left -> Next
+                updateSlider(currentIndex + 1);
+            } else {
+                // Swiped Right -> Prev
+                updateSlider(currentIndex - 1);
+            }
+            resetAutoplay();
+        }
+    }, { passive: true });
+
+    // Autoplay
     let interval = setInterval(() => updateSlider(currentIndex + 1), 6000);
 
     const resetAutoplay = () => {
         clearInterval(interval);
         interval = setInterval(() => updateSlider(currentIndex + 1), 6000);
     };
-
-    [prevBtn, nextBtn].forEach(btn => {
-        if (btn) btn.addEventListener('click', resetAutoplay);
-    });
 }
 
 /**
