@@ -708,13 +708,26 @@
         grid-template-columns: 1fr;
     }
     
+    .testimonial-slide {
+        padding: 0.25rem 0.25rem 1rem 0.25rem;
+    }
+
     .testimonial-card {
-        padding: 1.5rem 1.25rem;
+        padding: 1.75rem 1.35rem;
+        gap: 1.25rem;
+        border-radius: var(--radius-xl);
     }
     
     .testimonial-text {
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-size: 1rem;
+        line-height: 1.62;
+    }
+
+    .rating-hero-badge {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 0.4rem 0.9rem;
     }
     
     .faq-trigger {

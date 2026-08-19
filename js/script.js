@@ -183,26 +183,40 @@ function initFAQAccordion() {
  * 4. Lightweight Testimonial Slider
  */
 function initTestimonialSlider() {
-    const track = document.querySelector('.testimonial-track');
+    const container = document.querySelector('.testimonial-container');
+    const track = document.getElementById('testimonialTrack') || document.querySelector('.testimonial-track');
     const slides = document.querySelectorAll('.testimonial-slide');
-    const prevBtn = document.getElementById('prevBtn') || document.querySelector('.testimonial-nav-btn.prev');
-    const nextBtn = document.getElementById('nextBtn') || document.querySelector('.testimonial-nav-btn.next');
+    const dots = document.querySelectorAll('.testimonial-dot');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
     if (!track || slides.length === 0) return;
 
     let currentIndex = 0;
+    const totalSlides = slides.length;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let autoplayTimer = null;
+    const slideDuration = 7000; // 7.0s slow, comfortable reading time
 
     const updateSlider = (index) => {
-        currentIndex = index;
-        
-        // Keep bounds
-        if (currentIndex < 0) {
-            currentIndex = slides.length - 1;
-        } else if (currentIndex >= slides.length) {
+        // Keep within bounds
+        if (index < 0) {
+            currentIndex = totalSlides - 1;
+        } else if (index >= totalSlides) {
             currentIndex = 0;
+        } else {
+            currentIndex = index;
         }
 
         track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Update pagination dots
+        dots.forEach((dot, i) => {
+            const isActive = i === currentIndex;
+            dot.classList.toggle('active', isActive);
+            dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            dot.setAttribute('tabindex', isActive ? '0' : '-1');
+        });
     };
 
     if (prevBtn) {
@@ -219,12 +233,24 @@ function initTestimonialSlider() {
         });
     }
 
+    // Dot click listeners
+    dots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+            const targetIdx = parseInt(dot.getAttribute('data-index'), 10);
+            if (!isNaN(targetIdx)) {
+                updateSlider(targetIdx);
+                resetAutoplay();
+            }
+        });
+    });
+
     // Touch swipe gesture support for mobile
     let touchStartX = 0;
     let touchEndX = 0;
 
     track.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
+        stopAutoplay();
     }, { passive: true });
 
     track.addEventListener('touchend', (e) => {
@@ -232,23 +258,58 @@ function initTestimonialSlider() {
         const diffX = touchStartX - touchEndX;
         if (Math.abs(diffX) > 40) {
             if (diffX > 0) {
-                // Swiped Left -> Next
                 updateSlider(currentIndex + 1);
             } else {
-                // Swiped Right -> Prev
                 updateSlider(currentIndex - 1);
             }
-            resetAutoplay();
         }
+        startAutoplay();
     }, { passive: true });
 
-    // Autoplay
-    let interval = setInterval(() => updateSlider(currentIndex + 1), 6000);
+    // Keyboard navigation
+    if (container) {
+        container.setAttribute('tabindex', '0');
+        container.setAttribute('role', 'region');
+        container.setAttribute('aria-label', 'Patient reviews slider');
+        container.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                updateSlider(currentIndex - 1);
+                resetAutoplay();
+            } else if (e.key === 'ArrowRight') {
+                updateSlider(currentIndex + 1);
+                resetAutoplay();
+            }
+        });
 
-    const resetAutoplay = () => {
-        clearInterval(interval);
-        interval = setInterval(() => updateSlider(currentIndex + 1), 6000);
-    };
+        // Pause autoplay on mouse enter / focus, resume on leave
+        container.addEventListener('mouseenter', stopAutoplay);
+        container.addEventListener('mouseleave', startAutoplay);
+        container.addEventListener('focusin', stopAutoplay);
+        container.addEventListener('focusout', startAutoplay);
+    }
+
+    function startAutoplay() {
+        if (prefersReducedMotion || autoplayTimer) return;
+        autoplayTimer = setInterval(() => {
+            updateSlider(currentIndex + 1);
+        }, slideDuration);
+    }
+
+    function stopAutoplay() {
+        if (autoplayTimer) {
+            clearInterval(autoplayTimer);
+            autoplayTimer = null;
+        }
+    }
+
+    function resetAutoplay() {
+        stopAutoplay();
+        startAutoplay();
+    }
+
+    // Initialize first slide and start autoplay
+    updateSlider(0);
+    startAutoplay();
 }
 
 /**
