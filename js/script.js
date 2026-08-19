@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFAQAccordion();
     initTestimonialSlider();
     initScrollAnimations();
+    initParallax();
     initAppointmentForm();
     initBackToTop();
 });
@@ -247,12 +248,54 @@ function initScrollAnimations() {
             }
         });
     }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
     });
 
     revealElements.forEach(el => observer.observe(el));
 }
+
+/**
+ * 5.5. Cinematic Parallax Scroll Effect
+ */
+function initParallax() {
+    const parallaxSections = document.querySelectorAll('.cinematic-parallax-section');
+    if (parallaxSections.length === 0) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
+    let ticking = false;
+
+    const updateParallax = () => {
+        const windowHeight = window.innerHeight;
+
+        parallaxSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const bgWrapper = section.querySelector('.parallax-bg-wrapper');
+
+            // Only calculate when section is near or in viewport
+            if (bgWrapper && rect.top < windowHeight && rect.bottom > 0) {
+                const scrollProgress = (windowHeight - rect.top) / (windowHeight + rect.height);
+                // Subtle travel between -15% and +15%
+                const translateY = (scrollProgress - 0.5) * 40;
+                bgWrapper.style.transform = `translate3d(0, ${translateY}px, 0)`;
+            }
+        });
+
+        ticking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
+    }, { passive: true });
+
+    updateParallax(); // Initial run
+}
+
 
 /**
  * 6. Appointment Enquiry Form Validation
