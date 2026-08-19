@@ -583,7 +583,7 @@ function initHeroTaglineSlider() {
     if (slides.length <= 1) return;
 
     let currentIndex = 0;
-    const slideIntervalDuration = 3000; // 3 seconds per user request
+    const slideIntervalDuration = 3500; // 3.5 seconds (increased by half second)
     let timer = null;
     let isPaused = false;
 
@@ -626,7 +626,7 @@ function initHeroTaglineSlider() {
             if (idx === targetIndex) {
                 dot.classList.add('active');
                 if (progress && !isPaused) {
-                    progress.style.animation = 'dotProgressFill 3s linear forwards';
+                    progress.style.animation = 'dotProgressFill 3.5s linear forwards';
                 }
             }
         });
@@ -650,7 +650,7 @@ function initHeroTaglineSlider() {
             if (progress) {
                 progress.style.animation = 'none';
                 progress.offsetHeight; // trigger reflow
-                progress.style.animation = 'dotProgressFill 3s linear forwards';
+                progress.style.animation = 'dotProgressFill 3.5s linear forwards';
             }
         }
     };

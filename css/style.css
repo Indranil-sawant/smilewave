@@ -68,7 +68,13 @@ body {
     overflow-x: hidden;
 }
 
-img, svg {
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
     display: block;
     max-width: 100%;
     height: auto;
@@ -526,7 +532,7 @@ header.sticky-scrolled .logo img {
 /* --- Rotating Hero Tagline Deck --- */
 .hero-taglines-wrapper {
     position: relative;
-    min-height: 200px;
+    min-height: clamp(190px, 30vh, 230px);
     display: flex;
     align-items: flex-start;
 }
@@ -539,12 +545,10 @@ header.sticky-scrolled .logo img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(22px);
-    filter: blur(6px);
-    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                visibility 0.6s ease;
+    transform: translateY(16px);
+    transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.45s ease;
 }
 
 .hero-slide.active {
@@ -553,17 +557,16 @@ header.sticky-scrolled .logo img {
     visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
-    filter: blur(0);
     z-index: 2;
 }
 
 .hero-title {
-    font-size: clamp(2rem, 4.8vw, 3.75rem);
+    font-size: clamp(2.35rem, 5.5vw, 4.25rem);
     font-weight: 800;
-    line-height: 1.16;
-    letter-spacing: -0.03em;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
     color: #0F172A;
-    margin-bottom: 1rem;
+    margin-bottom: 0.85rem;
 }
 
 .highlight-wave {
@@ -575,19 +578,20 @@ header.sticky-scrolled .logo img {
 }
 
 .hero-desc {
-    font-size: clamp(1rem, 1.6vw, 1.125rem);
-    line-height: 1.65;
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    line-height: 1.6;
     color: var(--text-muted);
-    max-width: 540px;
+    max-width: 560px;
     margin: 0;
 }
 
-/* --- Slide Navigation & 3-Second Progress Indicators --- */
+/* --- Slide Navigation & 3.5-Second Progress Indicators --- */
 .hero-slider-controls {
     display: flex;
     align-items: center;
     gap: 0.65rem;
-    margin-top: 0.35rem;
+    margin-top: 0.85rem;
+    margin-bottom: 0.35rem;
 }
 
 .slider-dot {
@@ -623,7 +627,7 @@ header.sticky-scrolled .logo img {
 }
 
 .slider-dot.active .dot-progress {
-    animation: dotProgressFill 3s linear forwards;
+    animation: dotProgressFill 3.5s linear forwards;
 }
 
 @keyframes dotProgressFill {
@@ -2881,19 +2885,16 @@ footer {
 }
 
 .image-reveal-wrap img {
-    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.reveal .image-reveal-wrap img {
-    transform: scale(1.05);
+.image-reveal-wrap:hover img {
+    transform: scale(1.03);
 }
 
-.reveal.revealed .image-reveal-wrap img {
-    transform: scale(1);
-}
 
 /* --- E. Reduced Motion Compliance --- */
 @media (prefers-reduced-motion: reduce) {

@@ -599,18 +599,23 @@
     }
 
     .hero-taglines-wrapper {
-        min-height: clamp(210px, 32vh, 250px);
+        min-height: clamp(175px, 26vh, 210px);
     }
 
     .hero-title {
-        font-size: clamp(1.65rem, 4.8vw, 1.95rem);
-        line-height: 1.22;
-        letter-spacing: -0.02em;
+        font-size: clamp(2rem, 6.8vw, 2.5rem);
+        line-height: 1.14;
+        letter-spacing: -0.025em;
+        margin-bottom: 0.75rem;
     }
 
     .hero-desc {
-        font-size: 0.95rem;
+        font-size: 1.025rem;
         line-height: 1.55;
+    }
+
+    .hero-slider-controls {
+        margin-top: 0.85rem;
     }
 
     .hero-cta {
@@ -637,12 +642,26 @@
         text-align: center;
     }
     
+    .hero-image {
+        height: auto !important;
+        max-height: 340px !important;
+        width: 100% !important;
+        aspect-ratio: 4 / 3 !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
     .hero-card {
-        bottom: -1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 92%;
-        max-width: 320px;
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        margin: -1.5rem auto 0 auto !important;
+        width: calc(100% - 2rem) !important;
+        max-width: 320px !important;
+        z-index: 10 !important;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12) !important;
+        background-color: #FFFFFF !important;
     }
     
     .grid-cols-2 {
@@ -735,8 +754,13 @@
     }
 
     h1, .hero-title {
-        font-size: 1.6rem !important;
-        line-height: 1.25 !important;
+        font-size: 1.85rem !important;
+        line-height: 1.16 !important;
+        letter-spacing: -0.025em !important;
+    }
+
+    .hero-taglines-wrapper {
+        min-height: 180px;
     }
     
     h2 {
